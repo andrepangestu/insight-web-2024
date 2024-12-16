@@ -13,6 +13,8 @@ const InternalAuditPage = () => {
       <Banner
         src="/images/products/ideagen-internal-audit/ideagen-internal-audit-banner.svg"
         alt="Banner Ideagen Internal Audit"
+        logoSrc="/images/products/ideagen-internal-audit/ideagen-internal-audit-logo.svg"
+        withRectangle
       />
 
       <SectionTitle
