@@ -1,6 +1,6 @@
 import ArrowRightRedIcon from "@/icons/arrow-right-red.svg";
 import NetworkingManagerIcon from "@/icons/feature/networking-manager.svg";
-import BroadcastingIcon from "@/icons/feature/Broadcasting.svg";
+import BroadcastingIcon from "@/icons/feature/broadcasting.svg";
 import NetworkIcon from "@/icons/feature/network.svg";
 import ExtensionsFolderIcon from "@/icons/feature/extensions-folder.svg";
 import CircleArrowDownIcon from "@/icons/tabler-icon-circle-arrow-down.svg";
