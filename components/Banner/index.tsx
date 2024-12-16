@@ -21,6 +21,15 @@ const Banner: React.FC<BannerProps> = (props) => {
             height={320}
             layout="responsive"
           />
+          <div className="absolute right-0 top-0 h-full">
+            <Image
+              src="/images/products/ideagen-internal-audit/rectangle-banner.svg"
+              alt="rectangle"
+              width={0}
+              height={0}
+              layout="responsive"
+            />
+          </div>
         </div>
       </section>
     </>
