@@ -12,7 +12,6 @@ export default function Home() {
   return (
     <>
       <ScrollUp />
-
       <BannerCarousel />
       <Features />
       <ProductOverview />
