@@ -1,8 +1,9 @@
-export const riskManagementData = [
+export const ideagenRiskManagementData = [
   {
     id: 1,
-    imageSrc: "/images/solutions/risk-management/risk-management-1.svg",
-    imageAlt: "risk-management-1",
+    imageSrc:
+      "/images/products/ideagen-risk-management/ideagen-risk-management-1.svg",
+    imageAlt: "ideagen-risk-management-1",
     title: "Integrated Risk Process",
     content:
       "We act as your second line of defense, ensuring that everyone in your organization understands and implements comprehensive risk management strategies. Our innovative Risk Management Software simplifies the identification, assessment, and mitigation of risks by centralizing information, allowing you to register risks and generate practical reports that empower top management to evaluate risks across the organization or specific business units for informed decision-making.",

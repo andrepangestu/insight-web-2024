@@ -4,18 +4,18 @@ import ScrollUp from "@/components/Common/ScrollUp";
 import SectionDescription from "@/components/Common/SectionDescription";
 import SectionTitle from "@/components/Common/SectionTitle";
 import React from "react";
-import { riskManagementData } from "./data";
+import { ideagenRiskManagementData } from "./data";
 import ServiceListSection from "@/components/Common/ServiceListSection";
 import ContactUsSection from "@/components/Section/ContactUsSection";
 
-const RiskManagementPage = () => {
+const IdeagenRiskManagementPage = () => {
   return (
     <>
       <ScrollUp />
 
       <Banner
-        src="/images/solutions/risk-management/risk-management-banner.svg"
-        alt="Banner Risk Management"
+        src="/images/products/ideagen-risk-management/ideagen-risk-management-banner.svg"
+        alt="Banner Ideagen Risk Management"
       />
 
       <SectionTitle
@@ -33,7 +33,7 @@ const RiskManagementPage = () => {
         ]}
       />
 
-      {riskManagementData.map((section, index) => (
+      {ideagenRiskManagementData.map((section, index) => (
         <ContentSection
           key={index}
           imageSrc={section.imageSrc}
@@ -60,4 +60,4 @@ const RiskManagementPage = () => {
   );
 };
 
-export default RiskManagementPage;
+export default IdeagenRiskManagementPage;
