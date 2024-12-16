@@ -1,27 +1,27 @@
 export const ideagenInternalAuditData = [
   {
     id: 1,
-    imageSrc: "/images/solutions/internal-audit/internal-audit-1.svg",
-    imageAlt: "internal-audit-1",
-    title: "Integrated Audit Process",
+    imageSrc: "/images/products/ideagen-internal-audit/ideagen-internal-audit-1.svg",
+    imageAlt: "ideagen-internal-audit-1",
+    title: "Simplify Your Internal Audit Process with Ideagen",
     content:
       "Ideagen Internal Audit is a professional, cloud-based platform that helps you organize and streamline your entire audit process. It’s designed to save time by reducing manual work and system management, allowing audit teams to focus on more important tasks. With everything in one place, auditors can work more efficiently, delivering higher-quality results.",
   },
   {
     id: 2,
-    imageSrc: "/images/solutions/internal-audit/internal-audit-2.svg",
-    imageAlt: "internal-audit-2",
-    title: "Robotic Process Automation (RPA)",
+    imageSrc: "/images/products/ideagen-internal-audit/ideagen-internal-audit-2.svg",
+    imageAlt: "ideagen-internal-audit-2",
+    title: "Focus on What’s Most Important",
     content:
-      "We use the latest technology like Artificial Intelligence, big data, and machine learning to automate time-consuming tasks in Internal Audit. Our RPA tools help you test, process, and visualize data automatically. This saves you time and gives you accurate results through dynamic dashboards and visual reports.",
+      "With built-in access to enterprise risk data, Ideagen helps you prioritize the most critical issues in your audits. This ensures that every audit follows the same method, making your reports more accurate and reliable. By having a consistent process, your team can complete audits more effectively and focus on key areas of concern.",
     reverse: true,
   },
   {
     id: 3,
-    imageSrc: "/images/solutions/internal-audit/internal-audit-3.svg",
-    imageAlt: "internal-audit-3",
-    title: "Internal Audit Advisory",
+    imageSrc: "/images/products/ideagen-internal-audit/ideagen-internal-audit-3.svg",
+    imageAlt: "ideagen-internal-audit-3",
+    title: "Empower Your Role as a Trusted Advisor",
     content:
-      "We offer consulting services to help improve your Internal Audit function. Our services include Quality Assurance Reviews (QAR), developing Audit Charters, Policies, Manuals, and Procedures. Whether you need help with a specific audit project or want to outsource parts of your Internal Audit function, we can assist you in making your audit process more efficient.",
+      "Internal audit is essential to good governance. Ideagen gives you the tools to show your expertise and gain more influence in your organization. With the platform’s innovative features, you can strengthen your relationships with key decision-makers and demonstrate your value as a trusted advisor.",
   },
 ];
