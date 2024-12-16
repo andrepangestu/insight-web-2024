@@ -19,7 +19,7 @@ export default function RootLayout({
       */}
       <head />
 
-      <body className="dark:bg-black">
+      <body className="">
         <Providers>
           <Header />
           <div className="min-h-screen w-full">{children}</div>
