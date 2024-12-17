@@ -4,15 +4,19 @@ import { CheckBlueIcon } from "@/public/icons";
 interface ServiceListSectionProps {
   title: string;
   services: string[];
+  withoutDivider?: boolean;
 }
 
 const ServiceListSection: React.FC<ServiceListSectionProps> = ({
   title,
   services,
+  withoutDivider,
 }) => {
   return (
     <section className="mx-24 mb-16">
-      <hr className="my-16 w-full border-b border-lightSilver" />
+      {!withoutDivider && (
+        <hr className="my-16 w-full border-b border-lightSilver" />
+      )}
 
       <div className="flex-row justify-center text-center">
         <span className="mb-8 inline-block text-base font-semibold text-primaryText">

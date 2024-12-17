@@ -11,15 +11,13 @@ const ContactUsTraining = () => {
 
         <button className="justify center ml-4 inline-flex items-center rounded-lg border border-white p-2">
           <MessageIcon />
-          <span className="ml-2 font-semibold italic text-white">
-            Training Form
-          </span>
+          <span className="ml-2 font-semibold text-white">Training Form</span>
         </button>
 
         <span className="ml-4 text-base font-normal text-white">or</span>
 
         <button className="justify center ml-4 inline-flex items-center rounded-lg border border-white p-2">
-          <span className="ml-2 font-semibold italic text-white">
+          <span className="ml-2 font-semibold text-white">
             +62-21-2506697 / training@insight.co.id
           </span>
         </button>
