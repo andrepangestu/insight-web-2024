@@ -16,7 +16,7 @@ const ContentSection: React.FC<ContentSectionProps> = ({
   reverse = false,
 }) => {
   return (
-    <section className="container lg:px-40 xl:px-60">
+    <section className="container my-16 lg:px-40 xl:px-60">
       <div
         className={`flex grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-3`}
       >

@@ -4,7 +4,7 @@ import ScrollUp from "@/components/Common/ScrollUp";
 import SectionDescription from "@/components/Common/SectionDescription";
 import SectionTitle from "@/components/Common/SectionTitle";
 import React from "react";
-import {casewareSmartAnalyzerData} from "./data";
+import { casewareSmartAnalyzerData } from "./data";
 import ContactUsSection from "@/components/Section/ContactUsSection";
 import KeyFeatures from "@/components/KeyFeature";
 
@@ -14,17 +14,17 @@ const casewareSmartAnalyzerPage = () => {
       <ScrollUp />
 
       <Banner
-        src="/images/products/smart-exporter/smart-exporter-banner.svg"
-        alt="Banner SmartExporter"
+        src="/images/products/smart-analyzer/smart-analyzer-banner.svg"
+        alt="Banner Smart Analyzer"
         logoSrc="/images/products/caseware-logo.svg"
         withRectangle
       />
 
       <SectionTitle
         center
-        title="SmartExporter"
-        paragraph="Streamline SAP data extraction for faster insights"
-        description="Export data from SAP® and prepare it automatically"
+        title="SmartAnalyzer"
+        paragraph="Audit smarter, not harder with SmartAnalyzer"
+        description="Effortless, pre-built routines for faster, more reliable audits"
       />
 
       {casewareSmartAnalyzerData.map((section, index) => (
