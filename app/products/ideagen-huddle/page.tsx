@@ -4,8 +4,9 @@ import ScrollUp from "@/components/Common/ScrollUp";
 import SectionDescription from "@/components/Common/SectionDescription";
 import SectionTitle from "@/components/Common/SectionTitle";
 import React from "react";
-import { ideagenRiskManagementData } from "./data";
+import { ideagenHuddleKeyFeatures, ideagenRiskManagementData } from "./data";
 import ContactUsSection from "@/components/Section/ContactUsSection";
+import KeyFeatures from "@/components/KeyFeature";
 
 const ideagenHuddlePage = () => {
   return (
@@ -23,13 +24,7 @@ const ideagenHuddlePage = () => {
         center
         title="Ideagen Huddle"
         paragraph="Efficient and secure collaboration made simple"
-        mb="24px"
-      />
-
-      <SectionDescription
-        texts={[
-          "Improve collaboration in regulated industries with easy teamwork and branded workspaces",
-        ]}
+        description="Improve collaboration in regulated industries with easy teamwork and branded workspaces"
       />
 
       {ideagenRiskManagementData.map((section, index) => (
@@ -42,7 +37,14 @@ const ideagenHuddlePage = () => {
           reverse={section.reverse}
         />
       ))}
-      <ContactUsSection />
+
+      <KeyFeatures
+        title="Key features of Ideagen Huddle"
+        paragraph="Ideagen huddle solution helps you succeed with the following key features:"
+        keyFeaturesData={ideagenHuddleKeyFeatures}
+      />
+
+      <ContactUsSection textContent="Interested in trying Ideagen Huddle?" />
     </>
   );
 };

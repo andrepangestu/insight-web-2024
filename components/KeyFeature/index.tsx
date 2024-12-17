@@ -14,7 +14,7 @@ const KeyFeatures: React.FC<KeyFeatureProps> = (props) => {
   return (
     <>
       <section id="features" className="vertical-gradient py-12">
-        <div className="">
+        <div className="container">
           <SectionTitle
             title={props.title}
             paragraph={props.paragraph}

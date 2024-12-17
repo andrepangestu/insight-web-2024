@@ -22,7 +22,7 @@ const IdeagenRiskManagementPage = () => {
         withRectangle
       />
 
-      {/* <SectionTitle
+      <SectionTitle
         center
         title="Ideagen Risk Management"
         paragraph="Professional risk management solutions by experts"
@@ -38,7 +38,7 @@ const IdeagenRiskManagementPage = () => {
           content={section.content}
           reverse={section.reverse}
         />
-      ))} */}
+      ))}
 
       <KeyFeatures
         title="Key features of Ideagen Risk Management"
@@ -46,7 +46,7 @@ const IdeagenRiskManagementPage = () => {
         keyFeaturesData={ideagenRiskManagementKeyFeatures}
       />
 
-      <ContactUsSection />
+      <ContactUsSection textContent="Interested in trying Ideagen Risk Management?" />
     </>
   );
 };

@@ -18,6 +18,12 @@ import FolderTreeIcon from "@/icons/feature/folder-tree.svg";
 import SystemTaskIcon from "@/icons/feature/system-task.svg";
 import GearsIcon from "@/icons/feature/gears.svg";
 import FlowChartIcon from "@/icons/feature/flow-chart.svg";
+import UploadToFtpIcon from "@/icons/feature/upload-to-ftp.svg";
+import NameTagIcon from "@/icons/feature/name-tag.svg";
+import CheckFileIcon from "@/icons/feature/check-file.svg";
+import CheckedUserMaleIcon from "@/icons/feature/checked-user-male.svg";
+import FileExplorerIcon from "@/icons/feature/file-explorer.svg";
+import IphoneSeIcon from "@/icons/feature/iphone-se.svg";
 
 export {
   ArrowRightRedIcon,
@@ -38,4 +44,10 @@ export {
   SystemTaskIcon,
   GearsIcon,
   FlowChartIcon,
+  UploadToFtpIcon,
+  NameTagIcon,
+  CheckFileIcon,
+  CheckedUserMaleIcon,
+  FileExplorerIcon,
+  IphoneSeIcon,
 };
