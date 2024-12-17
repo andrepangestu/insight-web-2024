@@ -26,12 +26,24 @@ import FileExplorerIcon from "@/icons/feature/file-explorer.svg";
 import IphoneSeIcon from "@/icons/feature/iphone-se.svg";
 import ListViewIcon from "@/icons/feature/list-view.svg";
 import LineChartIcon from "@/icons/feature/line-chart.svg";
-import ExportDownloadsFolderIcon from "@/icons/feature/downloads-folder.svg";
-import ExportDocumentsFolderIcon from "@/icons/feature/documents-folder.svg";
+import DownloadsFolderIcon from "@/icons/feature/downloads-folder.svg";
+import DocumentsFolderIcon from "@/icons/feature/documents-folder.svg";
 import OutgoingDataIcon from "@/icons/feature/outgoing-data.svg";
 import BooksIcon from "@/icons/feature/books.svg";
 import TrainingIcon from "@/icons/feature/training.svg";
 import SystemInformationIcon from "@/icons/feature/system-information.svg";
+import WindyWeatherIcon from "@/icons/feature/windy-weather.svg";
+import AdminToolsIcon from "@/icons/feature/admin-tools.svg";
+import DataTransferIcon from "@/icons/feature/data-transfer.svg";
+import SecureCloudIcon from "@/icons/feature/secure-cloud.svg";
+import SyncIcon from "@/icons/feature/sync.svg";
+import RemoteWorkingIcon from "@/icons/feature/remote-working.svg";
+import CopyIcon from "@/icons/feature/copy.svg";
+import ExchangeIcon from "@/icons/feature/exchange.svg";
+import VpnIcon from "@/icons/feature/vpn.svg";
+import Client1Icon from "@/icons/feature/client1.svg";
+import Client2Icon from "@/icons/feature/client2.svg";
+import ServerIcon from "@/icons/feature/server.svg";
 
 export {
   ArrowRightRedIcon,
@@ -60,10 +72,22 @@ export {
   IphoneSeIcon,
   ListViewIcon,
   LineChartIcon,
-  ExportDocumentsFolderIcon,
-  ExportDownloadsFolderIcon,
+  DocumentsFolderIcon,
+  DownloadsFolderIcon,
   OutgoingDataIcon,
   BooksIcon,
   TrainingIcon,
   SystemInformationIcon,
+  WindyWeatherIcon,
+  DataTransferIcon,
+  SecureCloudIcon,
+  AdminToolsIcon,
+  ExchangeIcon,
+  CopyIcon,
+  RemoteWorkingIcon,
+  SyncIcon,
+  VpnIcon,
+  Client1Icon,
+  Client2Icon,
+  ServerIcon
 };

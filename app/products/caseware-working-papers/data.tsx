@@ -1,6 +1,6 @@
 import {
-    ExportDocumentsFolderIcon,
-    ExportDownloadsFolderIcon,
+    DocumentsFolderIcon,
+    DownloadsFolderIcon,
     FlowChartIcon,
     OutgoingDataIcon,
   } from "@/public/icons";
@@ -51,7 +51,7 @@ import {
   export const casewareWorkingPapersKeyFeatures = [
     {
       id: 1,
-      icon: <ExportDownloadsFolderIcon />,
+      icon: <DownloadsFolderIcon />,
       title: "Easy Data Imports",
       paragraph:
         "Import financial data from over 60 formats effortlessly.",
@@ -59,7 +59,7 @@ import {
     },
     {
       id: 2,
-      icon: <ExportDocumentsFolderIcon />,
+      icon: <DocumentsFolderIcon />,
       title: "Efficient Document Management",
       paragraph:
         "Streamline working papers with complete visibility into workflows.",
