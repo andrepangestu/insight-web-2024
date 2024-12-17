@@ -29,6 +29,9 @@ import LineChartIcon from "@/icons/feature/line-chart.svg";
 import ExportDownloadsFolderIcon from "@/icons/feature/downloads-folder.svg";
 import ExportDocumentsFolderIcon from "@/icons/feature/documents-folder.svg";
 import OutgoingDataIcon from "@/icons/feature/outgoing-data.svg";
+import BooksIcon from "@/icons/feature/books.svg";
+import TrainingIcon from "@/icons/feature/training.svg";
+import SystemInformationIcon from "@/icons/feature/system-information.svg";
 
 export {
   ArrowRightRedIcon,
@@ -59,5 +62,8 @@ export {
   LineChartIcon,
   ExportDocumentsFolderIcon,
   ExportDownloadsFolderIcon,
-  OutgoingDataIcon
+  OutgoingDataIcon,
+  BooksIcon,
+  TrainingIcon,
+  SystemInformationIcon,
 };

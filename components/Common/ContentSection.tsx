@@ -16,16 +16,18 @@ const ContentSection: React.FC<ContentSectionProps> = ({
   reverse = false,
 }) => {
   return (
-    <section className="mx-52 mb-8">
+    <section className="container lg:px-40 xl:px-60">
       <div
-        className={`flex grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-10`}
+        className={`flex grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-3`}
       >
         <div
-          className={`${reverse && "order-last flex justify-end"} col-span-2`}
+          className={`${
+            reverse && "order-last flex justify-end"
+          } md:col-span-1`}
         >
           <Image src={imageSrc} alt={imageAlt} width={200} height={200} />
         </div>
-        <div className="col-span-8">
+        <div className="md:col-span-2">
           <span className="mb-6 inline-block text-base font-semibold text-primaryText">
             {title}
           </span>
