@@ -3,6 +3,7 @@ import {
   CheckFileIcon,
   FileExplorerIcon,
   IphoneSeIcon,
+  ListViewIcon,
   NameTagIcon,
   UploadToFtpIcon,
 } from "@/public/icons";
@@ -38,7 +39,7 @@ export const ideagenRiskManagementData = [
 export const ideagenHuddleKeyFeatures = [
   {
     id: 1,
-    icon: <UploadToFtpIcon />,
+    icon: <ListViewIcon />,
     title: "Secure Document Collaboration",
     paragraph:
       "Enable safe sharing and collaboration on documents with robust security features.",

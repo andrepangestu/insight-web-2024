@@ -24,6 +24,11 @@ import CheckFileIcon from "@/icons/feature/check-file.svg";
 import CheckedUserMaleIcon from "@/icons/feature/checked-user-male.svg";
 import FileExplorerIcon from "@/icons/feature/file-explorer.svg";
 import IphoneSeIcon from "@/icons/feature/iphone-se.svg";
+import ListViewIcon from "@/icons/feature/list-view.svg";
+import LineChartIcon from "@/icons/feature/line-chart.svg";
+import ExportDownloadsFolderIcon from "@/icons/feature/downloads-folder.svg";
+import ExportDocumentsFolderIcon from "@/icons/feature/documents-folder.svg";
+import OutgoingDataIcon from "@/icons/feature/outgoing-data.svg";
 
 export {
   ArrowRightRedIcon,
@@ -50,4 +55,9 @@ export {
   CheckedUserMaleIcon,
   FileExplorerIcon,
   IphoneSeIcon,
+  ListViewIcon,
+  LineChartIcon,
+  ExportDocumentsFolderIcon,
+  ExportDownloadsFolderIcon,
+  OutgoingDataIcon
 };
