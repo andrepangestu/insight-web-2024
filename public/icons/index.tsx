@@ -33,6 +33,14 @@ import BooksIcon from "@/icons/feature/books.svg";
 import TrainingIcon from "@/icons/feature/training.svg";
 import SystemInformationIcon from "@/icons/feature/system-information.svg";
 
+// ABOUT US ICONS
+import HandshakeIcon from "@/icons/about-us/handshake.svg";
+import ImprovementIcon from "@/icons/about-us/improvement.svg";
+import LandscapeIcon from "@/icons/about-us/landscape.svg";
+import LearningIcon from "@/icons/about-us/learning.svg";
+import MessagingIcon from "@/icons/about-us/messaging.svg";
+import PottedPlantIcon from "@/icons/about-us/potted-plant.svg";
+
 export {
   ArrowRightRedIcon,
   NetworkingManagerIcon,
@@ -66,4 +74,10 @@ export {
   BooksIcon,
   TrainingIcon,
   SystemInformationIcon,
+  HandshakeIcon,
+  ImprovementIcon,
+  LandscapeIcon,
+  LearningIcon,
+  MessagingIcon,
+  PottedPlantIcon,
 };
