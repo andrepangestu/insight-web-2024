@@ -1,9 +1,3 @@
-import {
-  BroadcastingIcon,
-  ExtensionsFolderIcon,
-  NetworkIcon,
-  NetworkingManagerIcon,
-} from "@/public/icons";
 import { CasewareLogo, IdeagenLogo, SmartExporterLogo } from "@/public/images";
 import { Feature } from "@/types/feature";
 
