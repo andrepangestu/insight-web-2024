@@ -44,7 +44,7 @@ import {
         imageAlt: "caseware-paperwork-5",
         title: "Customize Your Processes",
         content:
-          "Create tailored documents, including financial statements and reports, that meet your specific project needs. Use the CaseView module within Working Papers to ensure smooth adoption across your organization..",
+          "Create tailored documents, including financial statements and reports, that meet your specific project needs. Use the CaseView module within Working Papers to ensure smooth adoption across your organization.",
       },
   ];
   

@@ -42,8 +42,8 @@ const casewareAuditSolutionPage = () => {
       ))}
 
       <KeyFeatures
-        title="Key features of Caseware Working Papers"
-        paragraph="Caseware Working Papers enhances your audit insights with the following key features:"
+        title="Key features of Caseware Audit Solutions"
+        paragraph="Caseware Audit Solution elevates your audit quality with the following key features:"
         keyFeaturesData={casewareAuditSolutionKeyFeatures}
       />
 

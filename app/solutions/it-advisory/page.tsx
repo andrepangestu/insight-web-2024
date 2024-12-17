@@ -50,7 +50,7 @@ const ItAdvisoryPage = () => {
         ]}
       />
 
-      <ContactUsSection />
+      <ContactUsSection textContent="Connect with our audit experts to explore IT advisory solutions" />
     </>
   );
 };

@@ -55,7 +55,7 @@ const RiskManagementPage = () => {
         ]}
       />
 
-      <ContactUsSection />
+      <ContactUsSection textContent="Connect with our audit experts to explore risk management solutions" />
     </>
   );
 };

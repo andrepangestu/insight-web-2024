@@ -57,7 +57,7 @@ const FinancialReportingPage = () => {
         ]}
       />
 
-      <ContactUsSection />
+      <ContactUsSection textContent="Connect with our audit experts to explore financial reporting solutions" />
     </>
   );
 };

@@ -5,7 +5,7 @@ export const independentReviewData = [
       imageAlt: "it-advisory-1",
       title: "Independent IT Governance",
       content:
-        "Our IT governance service offers executive teams an unbiased resource to define and assess both current and future business states, ensuring effective execution and alignment with strategic goals..",
+        "Our IT governance service offers executive teams an unbiased resource to define and assess both current and future business states, ensuring effective execution and alignment with strategic goals.",
     },
     {
       id: 2,

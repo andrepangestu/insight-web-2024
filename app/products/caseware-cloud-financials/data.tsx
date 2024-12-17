@@ -18,7 +18,7 @@ import {
       imageAlt: "caseware-cloud-financials-1",
       title: "Supercharge Your Workflow with Automation",
       content:
-        "Boost productivity and reclaim time for additional clients by automating your financial reporting preparation. Our solution features intelligent file building, improved data integration, carry-forward capabilities, and easy iXBRL tagging, significantly reducing the time needed for drafting, reviewing, and delivering financial statements..",
+        "Boost productivity and reclaim time for additional clients by automating your financial reporting preparation. Our solution features intelligent file building, improved data integration, carry-forward capabilities, and easy iXBRL tagging, significantly reducing the time needed for drafting, reviewing, and delivering financial statements.",
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ import {
       imageAlt: "caseware-cloud-financials-2",
       title: "Customize Your Accounts Production Experience",
       content:
-        "Our accounts production solution is adaptable to your specific needs. Modify financial statements, add or remove sections, embed supporting documents, and adjust tables to align with your organization's requirements. Deliver reports that are not only accurate but also uniquely crafted to fit your specifications..",
+        "Our accounts production solution is adaptable to your specific needs. Modify financial statements, add or remove sections, embed supporting documents, and adjust tables to align with your organization's requirements. Deliver reports that are not only accurate but also uniquely crafted to fit your specifications.",
       reverse: true,
     },
     {

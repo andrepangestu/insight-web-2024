@@ -52,7 +52,7 @@ const DrpbcpPage = () => {
         ]}
       />
 
-      <ContactUsSection />
+      <ContactUsSection textContent="Connect with our audit experts to explore business continuity solutions" />
     </>
   );
 };

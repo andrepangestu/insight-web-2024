@@ -55,7 +55,7 @@ const DataAnalyticsPage = () => {
         ]}
       />
 
-      <ContactUsSection />
+      <ContactUsSection textContent="Connect with our audit experts to explore data analytics solutions"/>
     </>
   );
 };

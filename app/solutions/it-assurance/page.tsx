@@ -54,7 +54,7 @@ const ItAssurancePage = () => {
         ]}
       />
 
-      <ContactUsSection />
+      <ContactUsSection textContent="Connect with our audit experts to explore IT assurance solutions" />
     </>
   );
 };

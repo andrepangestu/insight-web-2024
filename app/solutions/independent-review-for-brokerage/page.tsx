@@ -57,7 +57,7 @@ const IndependentReviewPage = () => {
         ]}
       />
 
-      <ContactUsSection />
+      <ContactUsSection textContent="Connect with our audit experts to explore independent review solutions" />
     </>
   );
 };

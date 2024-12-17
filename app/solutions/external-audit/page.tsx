@@ -53,7 +53,7 @@ const ExternalAuditPage = () => {
         ]}
       />
 
-      <ContactUsSection />
+      <ContactUsSection textContent="Connect with our audit experts to explore external audit solutions" />
     </>
   );
 };

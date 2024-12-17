@@ -56,7 +56,7 @@ const DocumentCollaborationPage = () => {
         ]}
       />
 
-      <ContactUsSection />
+      <ContactUsSection textContent="Connect with our audit experts to explore document collaboration solutions" />
     </>
   );
 };

@@ -42,8 +42,8 @@ const casewareCloudPage = () => {
       ))}
 
       <KeyFeatures
-        title="Key features of Caseware Working Papers"
-        paragraph="Caseware Working Papers enhances your audit insights with the following key features:"
+        title="Key features of Caseware Cloud"
+        paragraph="Caseware Cloud transforms your accounting practice with the following key features:"
         keyFeaturesData={casewareCloudKeyFeatures}
       />
 
