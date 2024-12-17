@@ -2,9 +2,12 @@ import Banner from "@/components/Banner";
 import ScrollUp from "@/components/Common/ScrollUp";
 import SectionTitle from "@/components/Common/SectionTitle";
 import ContentSection from "@/components/Common/ContentSection";
-import SectionDescription from "@/components/Common/SectionDescription";
 import ContactUsSection from "@/components/Section/ContactUsSection";
-import { ideagenInternalAuditData } from "./data";
+import {
+  ideagenInternalAuditData,
+  ideagenInternalAuditKeyFeatures,
+} from "./data";
+import KeyFeatures from "@/components/KeyFeature";
 
 const InternalAuditPage = () => {
   return (
@@ -19,9 +22,9 @@ const InternalAuditPage = () => {
 
       <SectionTitle
         center
-        title="Strengthen internal audit control and boost confidence with Ideagen"
-        paragraph="Ideagen Internal Audit is the market-leading risk-based audit management software solution for hundreds of organizations worldwide"
-        mb="24px"
+        title="Ideagen Internal Audit"
+        paragraph="Strengthen internal audit control and boost confidence with Ideagen"
+        description="Ideagen Internal Audit is the market-leading risk-based audit management software solution for hundreds of organizations worldwide"
       />
 
       {ideagenInternalAuditData.map((section, index) => (
@@ -34,7 +37,14 @@ const InternalAuditPage = () => {
           reverse={section.reverse}
         />
       ))}
-      <ContactUsSection />
+
+      <KeyFeatures
+        title="Key features of Ideagen Internal Audit"
+        paragraph="Ideagen Internal Audit management software provides all the tools you need to manage every part of the audit process:"
+        keyFeaturesData={ideagenInternalAuditKeyFeatures}
+      />
+
+      <ContactUsSection textContent="Interested in trying Ideagen Internal Audit?" />
     </>
   );
 };

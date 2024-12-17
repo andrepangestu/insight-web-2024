@@ -4,12 +4,14 @@ const SectionTitle = ({
   width = "931px",
   center,
   mb = "100px",
+  description,
 }: {
   title: string;
   paragraph: string;
   width?: string;
   center?: boolean;
   mb?: string;
+  description?: string;
 }) => {
   return (
     <>
@@ -27,8 +29,14 @@ const SectionTitle = ({
         </div>
 
         {paragraph && (
-          <div className="text-[30px] font-semibold text-primaryText">
+          <div className="text-3xl font-semibold text-primaryText">
             {paragraph}
+          </div>
+        )}
+
+        {description && (
+          <div className="mt-6 text-base font-semibold text-primaryText">
+            {description}
           </div>
         )}
       </div>

@@ -1,13 +1,23 @@
-import ArrowRightRedIcon from "@/icons/arrow-right-red.svg";
-import NetworkingManagerIcon from "@/icons/feature/networking-manager.svg";
-import BroadcastingIcon from "@/icons/feature/broadcasting.svg";
-import NetworkIcon from "@/icons/feature/network.svg";
-import ExtensionsFolderIcon from "@/icons/feature/extensions-folder.svg";
 import CircleArrowDownIcon from "@/icons/tabler-icon-circle-arrow-down.svg";
 import SortUpIcon from "@/icons/sort-up.svg";
 import ArrowBarRightIcon from "@/icons/tabler-icon-arrow-bar-right.svg";
 import CheckBlueIcon from "@/icons/check-blue.svg";
 import MessageIcon from "@/icons/message.svg";
+
+// FEATURE ICONS
+import ArrowRightRedIcon from "@/icons/arrow-right-red.svg";
+import NetworkingManagerIcon from "@/icons/feature/networking-manager.svg";
+import BroadcastingIcon from "@/icons/feature/broadcasting.svg";
+import NetworkIcon from "@/icons/feature/network.svg";
+import ExtensionsFolderIcon from "@/icons/feature/extensions-folder.svg";
+import ReportCardIcon from "@/icons/feature/report-card.svg";
+import DeclineIcon from "@/icons/feature/decline.svg";
+import BusinessReportIcon from "@/icons/feature/business-report.svg";
+import UserGroupsIcon from "@/icons/feature/user-groups.svg";
+import FolderTreeIcon from "@/icons/feature/folder-tree.svg";
+import SystemTaskIcon from "@/icons/feature/system-task.svg";
+import GearsIcon from "@/icons/feature/gears.svg";
+import FlowChartIcon from "@/icons/feature/flow-chart.svg";
 
 export {
   ArrowRightRedIcon,
@@ -20,4 +30,12 @@ export {
   ArrowBarRightIcon,
   CheckBlueIcon,
   MessageIcon,
+  ReportCardIcon,
+  DeclineIcon,
+  BusinessReportIcon,
+  UserGroupsIcon,
+  FolderTreeIcon,
+  SystemTaskIcon,
+  GearsIcon,
+  FlowChartIcon,
 };

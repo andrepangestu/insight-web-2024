@@ -1,12 +1,14 @@
 import Banner from "@/components/Banner";
 import ContentSection from "@/components/Common/ContentSection";
 import ScrollUp from "@/components/Common/ScrollUp";
-import SectionDescription from "@/components/Common/SectionDescription";
 import SectionTitle from "@/components/Common/SectionTitle";
 import React from "react";
-import { ideagenRiskManagementData } from "./data";
-import ServiceListSection from "@/components/Common/ServiceListSection";
+import {
+  ideagenRiskManagementData,
+  ideagenRiskManagementKeyFeatures,
+} from "./data";
 import ContactUsSection from "@/components/Section/ContactUsSection";
+import KeyFeatures from "@/components/KeyFeature";
 
 const IdeagenRiskManagementPage = () => {
   return (
@@ -20,17 +22,11 @@ const IdeagenRiskManagementPage = () => {
         withRectangle
       />
 
-      <SectionTitle
+      {/* <SectionTitle
         center
         title="Ideagen Risk Management"
         paragraph="Professional risk management solutions by experts"
-        mb="24px"
-      />
-
-      <SectionDescription
-        texts={[
-          "Provide actionable insights to your entire organisation with data-driven decision making with our risk software solution",
-        ]}
+        description="Provide actionable insights to your entire organisation with data-driven decision making with our risk software solution"
       />
 
       {ideagenRiskManagementData.map((section, index) => (
@@ -42,7 +38,14 @@ const IdeagenRiskManagementPage = () => {
           content={section.content}
           reverse={section.reverse}
         />
-      ))}
+      ))} */}
+
+      <KeyFeatures
+        title="Key features of Ideagen Risk Management"
+        paragraph="All-in-one risk management solution helps you control risk with the following key features:"
+        keyFeaturesData={ideagenRiskManagementKeyFeatures}
+      />
+
       <ContactUsSection />
     </>
   );
