@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const SolutionAndProduct = () => {
@@ -5,35 +6,56 @@ const SolutionAndProduct = () => {
     {
       category: "Solutions",
       itemLeft: [
-        "Internal Audit",
-        "External Audit",
-        "Risk Management",
-        "Data Analytics",
-        "Document Collaboration",
+        { name: "Internal Audit", link: "/solutions/internal-audit" },
+        { name: "External Audit", link: "/solutions/external-audit" },
+        { name: "Risk Management", link: "/solutions/risk-management" },
+        { name: "Data Analytics", link: "/solutions/data-analytics" },
+        {
+          name: "Document Collaboration",
+          link: "/solutions/document-collaboration",
+        },
       ],
       itemRight: [
-        "Financial Reporting",
-        "Independent Review for Brokerage",
-        "IT Assurance",
-        "IT Advisory",
-        "IT BCP/DRP",
+        { name: "Financial Reporting", link: "/solutions/financial-reporting" },
+        {
+          name: "Independent Review for Brokerage",
+          link: "/solutions/independent-review",
+        },
+        { name: "IT Assurance", link: "/solutions/it-assurance" },
+        { name: "IT Advisory", link: "/solutions/it-advisory" },
+        { name: "IT BCP/DRP", link: "/solutions/it-bcp-drp" },
       ],
     },
     {
       category: "Products",
       itemLeft: [
-        "Ideagen Internal Audit",
-        "Ideagen Risk Management",
-        "Ideagen Huddle",
-        "Caseware IDEA",
-        "Caseware Working Papers",
+        {
+          name: "Ideagen Internal Audit",
+          link: "/products/ideagen-internal-audit",
+        },
+        {
+          name: "Ideagen Risk Management",
+          link: "/products/ideagen-risk-management",
+        },
+        { name: "Ideagen Huddle", link: "/products/ideagen-huddle" },
+        { name: "Caseware IDEA", link: "/products/caseware-idea" },
+        {
+          name: "Caseware Working Papers",
+          link: "/products/caseware-working-papers",
+        },
       ],
       itemRight: [
-        "Caseware Cloud",
-        "Caseware Cloud Financials",
-        "Caseware Audit Solution",
-        "Smart Exporter",
-        "Smart Analyzer",
+        { name: "Caseware Cloud", link: "/products/caseware-cloud" },
+        {
+          name: "Caseware Cloud Financials",
+          link: "/products/caseware-cloud-financials",
+        },
+        {
+          name: "Caseware Audit Solution",
+          link: "/products/caseware-audit-solution",
+        },
+        { name: "Smart Exporter", link: "/products/smart-exporter" },
+        { name: "Smart Analyzer", link: "/products/smart-analyzer" },
       ],
     },
   ];
@@ -49,23 +71,21 @@ const SolutionAndProduct = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
               <div>
-                {item.itemLeft.map((item: string) => (
-                  <div
-                    key={item}
-                    className="mb-1 text-xs font-normal text-primaryTextBody"
-                  >
-                    {item}
-                  </div>
+                {item.itemLeft.map((data: any, index: number) => (
+                  <Link href={data?.link} key={index}>
+                    <span className="mb-1 block text-xs font-normal text-primaryTextBody">
+                      {data?.name}
+                    </span>
+                  </Link>
                 ))}
               </div>
               <div>
-                {item.itemRight.map((item: string) => (
-                  <div
-                    key={item}
-                    className="mb-1 text-xs font-normal text-primaryTextBody"
-                  >
-                    {item}
-                  </div>
+                {item.itemRight.map((data: any, index: number) => (
+                  <Link href={data?.link} key={index}>
+                    <span className="mb-1 block text-xs font-normal text-primaryTextBody">
+                      {data?.name}
+                    </span>
+                  </Link>
                 ))}
               </div>
             </div>

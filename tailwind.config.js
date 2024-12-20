@@ -27,6 +27,8 @@ module.exports = {
       primaryTextBlue: "#33437F",
       primaryTextGrey: "#888888",
       lightSilver: "#D9D9D9",
+      aliceBlue: "#F3F6FF",
+      lotion: "#FCFCFC",
     },
     screens: {
       xs: "450px",
