@@ -31,12 +31,13 @@ const newsAndEventData: NewsAndEvent[] = [
 
 const NewsAndEvents = () => {
   return (
-    <section className="relative z-10 bg-white py-16 md:py-20 lg:py-28">
+    <section className="relative z-10 bg-white py-16">
       <div className="container">
         <SectionTitle
           title="News / Product News / Events"
           paragraph=""
           center
+          mb="16px"
         />
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">

@@ -13,7 +13,7 @@ const ProductOverview = () => {
           center
         />
 
-        <div className="grid grid-cols-1 gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
+        <div className="flex grid grid-cols-1 items-center justify-center gap-x-8 gap-y-14 md:grid-cols-2 lg:grid-cols-3">
           {productOverviewData.map((feature) => (
             <SingleFeature key={feature.id} feature={feature} />
           ))}

@@ -41,35 +41,6 @@ const InquiryForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      {/* <input
-        type="email"
-        name="to"
-        placeholder="Recipient Email"
-        value={emailData.to}
-        onChange={handleChange}
-        required
-      />
-      <input
-        type="text"
-        name="subject"
-        placeholder="Subject"
-        value={emailData.subject}
-        onChange={handleChange}
-        required
-      />
-      <textarea
-        name="text"
-        placeholder="Email Content"
-        value={emailData.text}
-        onChange={handleChange}
-        required
-      />
-      <button
-        type="submit"
-        className="w-full rounded-lg bg-primaryRed py-3 text-base font-semibold text-white"
-      >
-        Submit
-      </button> */}
       <div className="mb-8">
         <input
           type="company-name"

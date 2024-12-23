@@ -33,6 +33,7 @@ const Header = () => {
     } else {
       setOpenIndex(index);
     }
+    setNavbarOpen(false);
   };
 
   return (
@@ -96,7 +97,7 @@ const Header = () => {
                 </button>
                 <nav
                   id="navbarCollapse"
-                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
+                  className={`navbar absolute right-0 z-30 w-[250px] w-full rounded border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
                     navbarOpen
                       ? "visibility top-full opacity-100"
                       : "invisible top-[120%] opacity-0"
@@ -109,6 +110,7 @@ const Header = () => {
                           <Link
                             href={menuItem.path}
                             className={`flex py-2 text-base font-semibold text-spaceCadet group-hover:opacity-70 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6`}
+                            onClick={() => setNavbarOpen(false)}
                           >
                             {menuItem.title}
                           </Link>
@@ -133,6 +135,7 @@ const Header = () => {
                                   href={submenuItem.path}
                                   key={submenuItem.id}
                                   className="block rounded py-2.5 text-sm text-dark hover:opacity-70 lg:px-3"
+                                  onClick={() => setNavbarOpen(false)}
                                 >
                                   {submenuItem.title}
                                 </Link>

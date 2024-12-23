@@ -76,6 +76,8 @@ const BannerCarousel = () => {
           showDots
           containerClass="container-with-dots"
           itemClass="image-item"
+          autoPlay
+          arrows={false}
         >
           {images.map((item) => (
             <div key={item.id} className="relative h-[500px] w-full">

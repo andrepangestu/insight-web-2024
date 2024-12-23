@@ -1,10 +1,21 @@
+"use client";
+
+import React, { useEffect, useState } from "react";
 import Banner from "@/components/Banner";
 import ScrollUp from "@/components/Common/ScrollUp";
 import InquiryForm from "@/components/InquiryForm";
 import { LetterBoxIcon } from "@/public/icons";
-import React from "react";
 
 const ContactUsPage = () => {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    fetch("/api/placeholder")
+      .then((response) => response.json())
+      .then((data) => setData(data))
+      .catch((error) => console.error("Error fetching data:", error));
+  }, []);
+
   return (
     <>
       <ScrollUp />

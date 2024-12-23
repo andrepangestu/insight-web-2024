@@ -25,6 +25,16 @@ export async function POST(request: NextRequest) {
     message,
   }: EmailRequestBody = await request.json();
 
+  console.log(
+    companyName,
+    name,
+    phone,
+    companyEmail,
+    industry,
+    subject,
+    message
+  );
+
   const contentEmail = `
       <table>
         <tr>
@@ -61,7 +71,7 @@ export async function POST(request: NextRequest) {
   const transport = nodemailer.createTransport({
     service: "gmail",
     /* 
-      setting service as 'gmail' is same as providing these setings:
+      setting service as 'gmail' is same as providing these settings:
       host: "smtp.gmail.com",
       port: 465,
       secure: true
