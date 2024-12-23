@@ -6,6 +6,7 @@ import MessageIcon from "@/icons/message.svg";
 
 // FEATURE ICONS
 import ArrowRightRedIcon from "@/icons/arrow-right-red.svg";
+import ArrowLeftRedIcon from "@/icons/arrow-left-red.svg";
 import NetworkingManagerIcon from "@/icons/feature/networking-manager.svg";
 import BroadcastingIcon from "@/icons/feature/broadcasting.svg";
 import NetworkIcon from "@/icons/feature/network.svg";
@@ -55,6 +56,7 @@ import PottedPlantIcon from "@/icons/about-us/potted-plant.svg";
 
 export {
   ArrowRightRedIcon,
+  ArrowLeftRedIcon,
   NetworkingManagerIcon,
   BroadcastingIcon,
   NetworkIcon,
