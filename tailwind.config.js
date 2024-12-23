@@ -29,6 +29,7 @@ module.exports = {
       lightSilver: "#D9D9D9",
       aliceBlue: "#F3F6FF",
       lotion: "#FCFCFC",
+      seaServant: "#5BD0D0",
     },
     screens: {
       xs: "450px",

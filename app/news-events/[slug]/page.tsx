@@ -12,7 +12,7 @@ const NewsEventsDetailPage = () => {
       <ScrollUp />
       <Banner
         src="/images/news-events/news-events-banner.svg"
-        alt="Banner Document Collaboration"
+        alt="Banner News & Events Detail"
       />
 
       <Link href={`/news-events`}>

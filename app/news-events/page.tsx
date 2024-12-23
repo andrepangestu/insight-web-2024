@@ -10,7 +10,7 @@ const NewsEventsPage = () => {
       <ScrollUp />
       <Banner
         src="/images/news-events/news-events-banner.svg"
-        alt="Banner Document Collaboration"
+        alt="Banner News & Events"
       />
 
       <span className="container block text-[16px] font-semibold text-primaryText">

@@ -54,6 +54,9 @@ import LearningIcon from "@/icons/about-us/learning.svg";
 import MessagingIcon from "@/icons/about-us/messaging.svg";
 import PottedPlantIcon from "@/icons/about-us/potted-plant.svg";
 
+// CONTACT US ICONS
+import LetterBoxIcon from "@/icons/letter-box.svg";
+
 export {
   ArrowRightRedIcon,
   ArrowLeftRedIcon,
@@ -106,4 +109,5 @@ export {
   LearningIcon,
   MessagingIcon,
   PottedPlantIcon,
+  LetterBoxIcon,
 };
