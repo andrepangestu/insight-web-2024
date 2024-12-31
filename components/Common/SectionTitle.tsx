@@ -29,7 +29,7 @@ const SectionTitle = ({
         </div>
 
         {paragraph && (
-          <div className="text-3xl font-semibold text-primaryText">
+          <div className="lg-text-[30px] text-[20px] font-semibold text-primaryText md:text-[30px]">
             {paragraph}
           </div>
         )}

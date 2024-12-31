@@ -3,7 +3,7 @@ import React from "react";
 
 const Copyright = () => {
   return (
-    <section className="px-24 py-10">
+    <section className="container py-8 md:py-10">
       <div className="flex items-center justify-between">
         <div>
           <span className="mr-1 text-sm font-normal text-primaryText">

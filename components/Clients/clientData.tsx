@@ -13,7 +13,7 @@ export const clientData: Client[] = [
     ],
   },
   {
-    category: "Government",
+    category: "Government & BUMN",
     clients: [
       "Pertamina",
       "Pelindo",

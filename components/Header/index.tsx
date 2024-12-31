@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import menuData from "./menuData";
 import { SortUpIcon } from "@/public/icons";
+import useDeviceType from "@/hook/use-device-type";
 
 const Header = () => {
   // Navbar toggle
@@ -36,6 +37,8 @@ const Header = () => {
     setNavbarOpen(false);
   };
 
+  const { isMobile } = useDeviceType();
+
   return (
     <>
       <header
@@ -57,15 +60,15 @@ const Header = () => {
                 <Image
                   src="/images/logo/logo.svg"
                   alt="logo"
-                  width={140}
-                  height={30}
+                  width={isMobile ? 160 : 140}
+                  height={isMobile ? 47 : 30}
                   className="w-full"
                 />
                 <Image
                   src="/images/logo/logo.svg"
                   alt="logo"
-                  width={140}
-                  height={30}
+                  width={isMobile ? 160 : 140}
+                  height={isMobile ? 47 : 30}
                   className="hidden w-full"
                 />
               </Link>

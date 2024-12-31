@@ -3,9 +3,9 @@ import { NewsAndEvent } from "@/types/newsAndEvent";
 
 const NewsAndEventItem = ({ item }: { item: NewsAndEvent }) => {
   return (
-    <div className="w-full">
+    <div className="shadow-inner shadow-lg">
       <div
-        className="wow fadeInUp rounded-md bg-white p-8 shadow-lg shadow-one lg:px-5 xl:px-8"
+        className="wow fadeInUp rounded-md bg-white p-8 lg:px-5 xl:px-8"
         data-wow-delay=".1s"
       >
         <div className="mb-4">

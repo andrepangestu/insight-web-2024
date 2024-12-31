@@ -1,3 +1,4 @@
+import CircleArrowUpIcon from "@/icons/tabler-icon-circle-arrow-up.svg";
 import CircleArrowDownIcon from "@/icons/tabler-icon-circle-arrow-down.svg";
 import SortUpIcon from "@/icons/sort-up.svg";
 import ArrowBarRightIcon from "@/icons/tabler-icon-arrow-bar-right.svg";
@@ -64,6 +65,7 @@ export {
   BroadcastingIcon,
   NetworkIcon,
   ExtensionsFolderIcon,
+  CircleArrowUpIcon,
   CircleArrowDownIcon,
   SortUpIcon,
   ArrowBarRightIcon,
