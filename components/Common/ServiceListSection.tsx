@@ -13,19 +13,22 @@ const ServiceListSection: React.FC<ServiceListSectionProps> = ({
   withoutDivider,
 }) => {
   return (
-    <section className="mx-24 mb-16">
+    <section className="container md:mx-24 md:mb-16">
       {!withoutDivider && (
-        <hr className="my-16 w-full border-b border-lightSilver" />
+        <hr className="mb-12 w-full border-b border-lightSilver md:my-16" />
       )}
 
-      <div className="flex-row justify-center text-center">
-        <span className="mb-8 inline-block text-base font-semibold text-primaryText">
+      <div className="mb-8 flex-row md:justify-center md:text-center">
+        <span className="mb-8 block text-center text-base font-semibold text-primaryText">
           {title}
         </span>
 
         {services.map((service, index) => (
-          <div key={index} className="mb-4 flex items-center justify-center">
-            <CheckBlueIcon />
+          <div key={index} className="mb-4 flex items-center md:justify-center">
+            <div>
+              <CheckBlueIcon />
+            </div>
+
             <span className="ml-4 text-sm font-medium text-primaryText">
               {service}
             </span>

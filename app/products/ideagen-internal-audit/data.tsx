@@ -1,10 +1,10 @@
+"use client";
+
 import {
   BroadcastingIcon,
   BusinessReportIcon,
   DeclineIcon,
-  ExtensionsFolderIcon,
   FolderTreeIcon,
-  NetworkIcon,
   NetworkingManagerIcon,
   ReportCardIcon,
   UserGroupsIcon,

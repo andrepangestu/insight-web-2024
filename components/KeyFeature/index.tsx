@@ -17,7 +17,9 @@ const KeyFeatures: React.FC<KeyFeatureProps> = (props) => {
       <div className="grid grid-cols-1 place-items-center gap-4 md:grid-cols-2 md:gap-x-8 md:gap-y-14 lg:grid-cols-4">
         {Array.isArray(props.keyFeaturesData) &&
           props.keyFeaturesData.map((feature, index) => (
-            <SingleFeature key={feature.id} feature={feature} />
+            <div className="mx-auto w-3/6">
+              <SingleFeature key={feature.id} feature={feature} />
+            </div>
           ))}
       </div>
     </section>

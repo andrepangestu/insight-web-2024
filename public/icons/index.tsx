@@ -58,6 +58,10 @@ import PottedPlantIcon from "@/icons/about-us/potted-plant.svg";
 // CONTACT US ICONS
 import LetterBoxIcon from "@/icons/letter-box.svg";
 
+// TESTIMONIALS ICONS
+import LeftArrowGrayIcon from "@/icons/left-arrow-gray.svg";
+import RightArrowGrayIcon from "@/icons/right-arrow-gray.svg";
+
 export {
   ArrowRightRedIcon,
   ArrowLeftRedIcon,
@@ -71,7 +75,8 @@ export {
   ArrowBarRightIcon,
   CheckBlueIcon,
   MessageIcon,
-  ReportCardIcon,
+  LeftArrowGrayIcon,
+  RightArrowGrayIcon,
   DeclineIcon,
   BusinessReportIcon,
   UserGroupsIcon,
@@ -112,4 +117,5 @@ export {
   MessagingIcon,
   PottedPlantIcon,
   LetterBoxIcon,
+  ReportCardIcon,
 };

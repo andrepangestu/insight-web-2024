@@ -21,13 +21,17 @@ const ContentSection: React.FC<ContentSectionProps> = ({
         className={`flex grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-3`}
       >
         <div
-          className={`flex justify-center md:${
-            reverse && "order-last flex justify-end"
+          className={`flex justify-center md:justify-start ${
+            reverse && "md:order-last md:flex md:justify-end"
           } mb-6 md:col-span-1`}
         >
           <Image src={imageSrc} alt={imageAlt} width={200} height={200} />
         </div>
-        <div className="mb-12 text-center md:col-span-2">
+        <div
+          className={`mb-12 text-center md:col-span-2 ${
+            reverse ? "md:text-right" : "md:text-left"
+          }`}
+        >
           <span className="mb-4 inline-block text-base font-semibold text-primaryText md:mb-6">
             {title}
           </span>
