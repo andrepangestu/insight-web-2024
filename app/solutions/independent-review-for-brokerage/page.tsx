@@ -1,3 +1,5 @@
+"use client";
+
 import Banner from "@/components/Banner";
 import ContentSection from "@/components/Common/ContentSection";
 import ScrollUp from "@/components/Common/ScrollUp";
@@ -7,16 +9,28 @@ import React from "react";
 import { independentReviewData } from "./data";
 import ServiceListSection from "@/components/Common/ServiceListSection";
 import ContactUsSection from "@/components/Section/ContactUsSection";
+import useDeviceType from "@/hook/use-device-type";
 
 const IndependentReviewPage = () => {
+  const { isMobile, isTablet } = useDeviceType();
+  let bannerSrc;
+  switch (true) {
+    case isMobile:
+      bannerSrc =
+        "/images/solutions/independent-review-for-brokerage/independent-review-mobile-banner.svg";
+      break;
+    case isTablet:
+      bannerSrc =
+        "/images/solutions/independent-review-for-brokerage/independent-review-banner.svg";
+      break;
+    default:
+      bannerSrc =
+        "/images/solutions/independent-review-for-brokerage/independent-review-banner.svg";
+  }
   return (
     <>
       <ScrollUp />
-
-      <Banner
-        src="/images/solutions/independent-review-for-brokerage/independent-review-banner.svg"
-        alt="Banner Independent Review for Brokerage"
-      />
+      <Banner src={bannerSrc} alt="Banner Independent Review for Brokerage" />
 
       <SectionTitle
         center
@@ -27,9 +41,9 @@ const IndependentReviewPage = () => {
 
       <SectionDescription
         texts={[
-            "In a rapidly evolving market, accurate and unbiased insights are crucial for strategic decision-making. At Insight, we offer a suite of Independent Review solutions designed to provide clarity and drive results.",
+          "In a rapidly evolving market, accurate and unbiased insights are crucial for strategic decision-making. At Insight, we offer a suite of Independent Review solutions designed to provide clarity and drive results.",
 
-            "In order to keep up with the risk of attacks, organizations need to utilize professional expertise to secure their infrastructure and applications. Insight Consulting, as one of the registered Independent Reviewer at the Indonesian Stock Exchange, facilitates every stock exchange member and broker in the review process towards the system competency and implementation.",
+          "In order to keep up with the risk of attacks, organizations need to utilize professional expertise to secure their infrastructure and applications. Insight Consulting, as one of the registered Independent Reviewer at the Indonesian Stock Exchange, facilitates every stock exchange member and broker in the review process towards the system competency and implementation.",
         ]}
       />
 
@@ -53,7 +67,7 @@ const IndependentReviewPage = () => {
           "Data Center and Disaster Recovery Center (DRC) Relocation",
           "Business Continuity Plan (BCP) Implementation for Brokerage",
           "Vulnerability Assessment",
-          "Vulnerability Assessment"
+          "Vulnerability Assessment",
         ]}
       />
 

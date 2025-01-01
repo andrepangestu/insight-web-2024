@@ -1,3 +1,5 @@
+"use client";
+
 import Banner from "@/components/Banner";
 import ContentSection from "@/components/Common/ContentSection";
 import ScrollUp from "@/components/Common/ScrollUp";
@@ -7,16 +9,27 @@ import React from "react";
 import ServiceListSection from "@/components/Common/ServiceListSection";
 import ContactUsSection from "@/components/Section/ContactUsSection";
 import { dataAnalyticsData } from "./dataAnalyticsData";
+import useDeviceType from "@/hook/use-device-type";
 
 const DataAnalyticsPage = () => {
+  const { isMobile, isTablet } = useDeviceType();
+  let bannerSrc;
+  switch (true) {
+    case isMobile:
+      bannerSrc =
+        "/images/solutions/data-analytics/data-analytics-mobile-banner.svg";
+      break;
+    case isTablet:
+      bannerSrc = "/images/solutions/data-analytics/data-analytics-banner.svg";
+      break;
+    default:
+      bannerSrc = "/images/solutions/data-analytics/data-analytics-banner.svg";
+  }
+
   return (
     <>
       <ScrollUp />
-
-      <Banner
-        src="/images/solutions/data-analytics/data-analytics-banner.svg"
-        alt="Banner Data Analytics"
-      />
+      <Banner src={bannerSrc} alt="Banner Data Analytics" />
 
       <SectionTitle
         center
@@ -55,7 +68,7 @@ const DataAnalyticsPage = () => {
         ]}
       />
 
-      <ContactUsSection textContent="Connect with our audit experts to explore data analytics solutions"/>
+      <ContactUsSection textContent="Connect with our audit experts to explore data analytics solutions" />
     </>
   );
 };

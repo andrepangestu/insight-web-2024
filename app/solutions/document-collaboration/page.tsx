@@ -1,3 +1,5 @@
+"use client";
+
 import Banner from "@/components/Banner";
 import ContentSection from "@/components/Common/ContentSection";
 import ScrollUp from "@/components/Common/ScrollUp";
@@ -7,16 +9,29 @@ import React from "react";
 import { documentCollaborationData } from "./data";
 import ServiceListSection from "@/components/Common/ServiceListSection";
 import ContactUsSection from "@/components/Section/ContactUsSection";
+import useDeviceType from "@/hook/use-device-type";
 
 const DocumentCollaborationPage = () => {
+  const { isMobile, isTablet } = useDeviceType();
+  let bannerSrc;
+  switch (true) {
+    case isMobile:
+      bannerSrc =
+        "/images/solutions/document-collaboration/document-collaboration-mobile-banner.svg";
+      break;
+    case isTablet:
+      bannerSrc =
+        "/images/solutions/document-collaboration/document-collaboration-banner.svg";
+      break;
+    default:
+      bannerSrc =
+        "/images/solutions/document-collaboration/document-collaboration-banner.svg";
+  }
+
   return (
     <>
       <ScrollUp />
-
-      <Banner
-        src="/images/solutions/document-collaboration/document-collaboration-banner.svg"
-        alt="Banner Document Collaboration"
-      />
+      <Banner src={bannerSrc} alt="Banner Document Collaboration" />
 
       <SectionTitle
         center

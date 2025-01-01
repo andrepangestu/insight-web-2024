@@ -1,21 +1,33 @@
+"use client";
+
 import Banner from "@/components/Banner";
 import ScrollUp from "@/components/Common/ScrollUp";
 import SectionTitle from "@/components/Common/SectionTitle";
-
 import ContentSection from "@/components/Common/ContentSection";
 import SectionDescription from "@/components/Common/SectionDescription";
 import ServiceListSection from "@/components/Common/ServiceListSection";
 import ContactUsSection from "@/components/Section/ContactUsSection";
 import { internalAuditData } from "./internalAuditData";
+import useDeviceType from "@/hook/use-device-type";
 
 const InternalAuditPage = () => {
+  const { isMobile, isTablet } = useDeviceType();
+  let bannerSrc;
+  switch (true) {
+    case isMobile:
+      bannerSrc =
+        "/images/solutions/internal-audit/internal-audit-mobile-banner.svg";
+      break;
+    case isTablet:
+      bannerSrc = "/images/solutions/internal-audit/internal-audit-banner.svg";
+      break;
+    default:
+      bannerSrc = "/images/solutions/internal-audit/internal-audit-banner.svg";
+  }
   return (
     <>
       <ScrollUp />
-      <Banner
-        src="/images/solutions/internal-audit/internal-audit-banner.svg"
-        alt="Banner Internal Audit"
-      />
+      <Banner src={bannerSrc} alt="Banner Internal Audit" />
 
       <SectionTitle
         center

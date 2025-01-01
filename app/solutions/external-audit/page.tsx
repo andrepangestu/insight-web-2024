@@ -1,3 +1,5 @@
+"use client";
+
 import Banner from "@/components/Banner";
 import ContentSection from "@/components/Common/ContentSection";
 import ScrollUp from "@/components/Common/ScrollUp";
@@ -6,15 +8,26 @@ import SectionTitle from "@/components/Common/SectionTitle";
 import { externalAuditData } from "./externalAuditData";
 import ServiceListSection from "@/components/Common/ServiceListSection";
 import ContactUsSection from "@/components/Section/ContactUsSection";
+import useDeviceType from "@/hook/use-device-type";
 
 const ExternalAuditPage = () => {
+  const { isMobile, isTablet } = useDeviceType();
+  let bannerSrc;
+  switch (true) {
+    case isMobile:
+      bannerSrc =
+        "/images/solutions/external-audit/external-audit-mobile-banner.svg";
+      break;
+    case isTablet:
+      bannerSrc = "/images/solutions/external-audit/external-audit-banner.svg";
+      break;
+    default:
+      bannerSrc = "/images/solutions/external-audit/external-audit-banner.svg";
+  }
   return (
     <>
       <ScrollUp />
-      <Banner
-        src="/images/solutions/external-audit/external-audit-banner.svg"
-        alt="Banner External Audit"
-      />
+      <Banner src={bannerSrc} alt="Banner External Audit" />
 
       <SectionTitle
         center

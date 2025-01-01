@@ -1,3 +1,5 @@
+"use client";
+
 import Banner from "@/components/Banner";
 import ContentSection from "@/components/Common/ContentSection";
 import ScrollUp from "@/components/Common/ScrollUp";
@@ -7,16 +9,29 @@ import React from "react";
 import { riskManagementData } from "./data";
 import ServiceListSection from "@/components/Common/ServiceListSection";
 import ContactUsSection from "@/components/Section/ContactUsSection";
+import useDeviceType from "@/hook/use-device-type";
 
 const RiskManagementPage = () => {
+  const { isMobile, isTablet } = useDeviceType();
+  let bannerSrc;
+  switch (true) {
+    case isMobile:
+      bannerSrc =
+        "/images/solutions/risk-management/risk-management-mobile-banner.svg";
+      break;
+    case isTablet:
+      bannerSrc =
+        "/images/solutions/risk-management/risk-management-banner.svg";
+      break;
+    default:
+      bannerSrc =
+        "/images/solutions/risk-management/risk-management-banner.svg";
+  }
+
   return (
     <>
       <ScrollUp />
-
-      <Banner
-        src="/images/solutions/risk-management/risk-management-banner.svg"
-        alt="Banner Risk Management"
-      />
+      <Banner src={bannerSrc} alt="Banner Risk Management" />
 
       <SectionTitle
         center

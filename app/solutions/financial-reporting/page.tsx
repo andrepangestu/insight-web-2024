@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Banner from "@/components/Banner";
 import ContentSection from "@/components/Common/ContentSection";
@@ -7,16 +9,28 @@ import SectionTitle from "@/components/Common/SectionTitle";
 import { financialReportingData } from "./data";
 import ServiceListSection from "@/components/Common/ServiceListSection";
 import ContactUsSection from "@/components/Section/ContactUsSection";
+import useDeviceType from "@/hook/use-device-type";
 
 const FinancialReportingPage = () => {
+  const { isMobile, isTablet } = useDeviceType();
+  let bannerSrc;
+  switch (true) {
+    case isMobile:
+      bannerSrc =
+        "/images/solutions/financial-reporting/financial-reporting-mobile-banner.svg";
+      break;
+    case isTablet:
+      bannerSrc =
+        "/images/solutions/financial-reporting/financial-reporting-banner.svg";
+      break;
+    default:
+      bannerSrc =
+        "/images/solutions/financial-reporting/financial-reporting-banner.svg";
+  }
   return (
     <>
       <ScrollUp />
-
-      <Banner
-        src="/images/solutions/financial-reporting/financial-reporting-banner.svg"
-        alt="Banner Financial Reporting"
-      />
+      <Banner src={bannerSrc} alt="Banner Financial Reporting" />
 
       <SectionTitle
         center
