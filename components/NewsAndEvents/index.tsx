@@ -59,7 +59,7 @@ const NewsAndEvents = () => {
             itemClass="image-item p-4"
             arrows={false}
             swipeable
-            customTransition="all .5"
+            customTransition="transform 0.5s ease-in-out"
             transitionDuration={500}
           >
             {newsAndEventData.map((item) => (

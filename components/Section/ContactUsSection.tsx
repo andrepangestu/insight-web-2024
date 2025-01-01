@@ -8,7 +8,7 @@ interface ContactUsSectionProps {
 
 const ContactUsSection: React.FC<ContactUsSectionProps> = (props) => {
   return (
-    <section className="bg-spaceCadet py-4">
+    <section className="bg-spaceCadet p-8 md:py-4">
       <div className="w-full flex-row items-center justify-center text-center">
         <span className="text-base font-normal text-white">
           {props.textContent ??
@@ -17,7 +17,7 @@ const ContactUsSection: React.FC<ContactUsSectionProps> = (props) => {
 
         <Link
           href="contact-us"
-          className="ml-4 inline-flex items-center justify-center rounded-lg border border-white p-2"
+          className="mt-4 inline-flex items-center justify-center rounded-lg border border-white p-2 md:ml-4"
         >
           <MessageIcon />
           <span className="ml-2 font-semibold italic text-white">

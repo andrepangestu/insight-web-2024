@@ -1,3 +1,7 @@
+"use client";
+
+import useDeviceType from "@/hook/use-device-type";
+
 const SectionTitle = ({
   title,
   paragraph,
@@ -13,34 +17,35 @@ const SectionTitle = ({
   mb?: string;
   description?: string;
 }) => {
+  const { isMobile } = useDeviceType();
   return (
-    <>
+    <div
+      className={`wow fadeInUp container w-full ${
+        center ? "mx-auto text-center" : ""
+      }`}
+      data-wow-delay=".1s"
+      style={{ maxWidth: width, marginBottom: isMobile ? "50px" : "100px" }}
+    >
       <div
-        className={`wow fadeInUp w-full ${center ? "mx-auto text-center" : ""}`}
-        data-wow-delay=".1s"
-        style={{ maxWidth: width, marginBottom: mb }}
+        className={`${
+          paragraph && "mb-4"
+        } text-base font-semibold text-primaryText`}
       >
-        <div
-          className={`${
-            paragraph && "mb-4"
-          } text-base font-semibold text-primaryText`}
-        >
-          {title}
-        </div>
-
-        {paragraph && (
-          <div className="lg-text-[30px] text-[20px] font-semibold text-primaryText md:text-[30px]">
-            {paragraph}
-          </div>
-        )}
-
-        {description && (
-          <div className="mt-6 text-base font-semibold text-primaryText">
-            {description}
-          </div>
-        )}
+        {title}
       </div>
-    </>
+
+      {paragraph && (
+        <div className="text-[26px] font-semibold text-primaryText">
+          {paragraph}
+        </div>
+      )}
+
+      {description && (
+        <div className="mt-6 text-base font-semibold text-primaryText">
+          {description}
+        </div>
+      )}
+    </div>
   );
 };
 

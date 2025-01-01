@@ -13,7 +13,7 @@ const Banner: React.FC<BannerProps> = (props) => {
     <>
       <section
         id="banner"
-        className="relative z-10 mb-8 w-full overflow-hidden pt-[120px]"
+        className="relative z-10 mb-8 w-full overflow-hidden pt-[90px] md:pt-[120px]"
       >
         <div className="max-w-screen relative w-full">
           <Image

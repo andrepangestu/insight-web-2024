@@ -34,7 +34,6 @@ const Header = () => {
     } else {
       setOpenIndex(index);
     }
-    setNavbarOpen(false);
   };
 
   const { isMobile } = useDeviceType();
@@ -111,9 +110,9 @@ const Header = () => {
                       <li key={menuItem.id} className="group relative">
                         {menuItem.path ? (
                           <Link
+                            onClick={() => setNavbarOpen(false)}
                             href={menuItem.path}
                             className={`flex py-2 text-base font-semibold text-spaceCadet group-hover:opacity-70 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6`}
-                            onClick={() => setNavbarOpen(false)}
                           >
                             {menuItem.title}
                           </Link>

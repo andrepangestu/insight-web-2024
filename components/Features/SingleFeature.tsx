@@ -5,7 +5,7 @@ import Link from "next/link";
 const SingleFeature = ({ feature }: { feature: Feature }) => {
   const { icon, title, paragraph } = feature;
   return (
-    <div className="wow fadeInUp" data-wow-delay=".15s">
+    <div className="wow fadeInUp w-3/6 md:w-full" data-wow-delay=".15s">
       <div className="mb-4 flex items-center justify-center text-primary md:mb-8">
         {icon}
       </div>
@@ -14,7 +14,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
           {title}
         </span>
       )}
-      <p className="mb-4 text-center text-sm font-medium leading-relaxed text-primaryTextBody md:mb-8">
+      <p className="mb-4 text-center text-sm font-medium leading-relaxed text-primaryTextBody md:mb-8 md:w-full">
         {paragraph}
       </p>
 
