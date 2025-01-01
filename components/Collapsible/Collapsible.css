@@ -1,0 +1,15 @@
+.collapsible {
+  /* margin-bottom: 10px; */
+}
+
+.collapsible__toggle {
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+.collapsible__content {
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}

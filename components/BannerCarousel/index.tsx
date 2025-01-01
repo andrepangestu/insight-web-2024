@@ -5,37 +5,14 @@ import Image from "next/image";
 import React from "react";
 import MultiCarousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { dataBannerCarousel } from "./data";
+import useDeviceType from "@/hook/use-device-type";
+
 import "./styles.css";
+import Link from "next/link";
 
 const BannerCarousel = () => {
-  const images = [
-    {
-      id: 1,
-      src: "/images/banner-carousel/banner-carousel-1.svg",
-      alt: "Banner 1",
-      link: "/",
-      buttonStyle: "bg-gradient-red ",
-      title:
-        "Leading Management Assurance Consulting and Technology Solutions in Asia Pacific",
-    },
-    {
-      id: 2,
-      src: "/images/banner-carousel/banner-carousel-2.svg",
-      alt: "Banner 2",
-      link: "/",
-      buttonStyle: "bg-telemagenta",
-      title:
-        "Streamline Your Business Compliance and Collaboration with Ideagen",
-    },
-    {
-      id: 3,
-      src: "/images/banner-carousel/banner-carousel-3.svg",
-      alt: "Banner 3",
-      link: "/",
-      buttonStyle: "border-2 border-white",
-      title: "Revolutionize Your Company Auditing and Reporting with Caseware",
-    },
-  ];
+  const { isMobile } = useDeviceType();
 
   const responsive = {
     superLargeDesktop: {
@@ -55,20 +32,49 @@ const BannerCarousel = () => {
       items: 1,
     },
   };
+
   return (
-    <>
-      <section
-        id="home"
-        className="relative z-10 w-full overflow-hidden pb-16 pt-[120px]"
-      >
+    <section
+      id="home"
+      className="relative z-10 w-full overflow-hidden pt-[90px] md:pb-16 md:pb-16 md:pt-[120px] lg:pb-16 xl:pb-16 2xl:pb-16"
+    >
+      {isMobile ? (
+        <div className="flex items-center justify-between bg-spaceCadet p-4 text-xs text-white">
+          <div>
+            <span className="mr-1 font-normal">
+              Looking for a fast, easy, automated, high value for money Audit
+              and risk management solution?
+            </span>
+            <Link href="/contact-us/inquiry-form">
+              <span className="font-bold underline">
+                Try our solutions here
+              </span>
+            </Link>
+          </div>
+
+          <div>
+            <ArrowBarRightIcon />
+          </div>
+        </div>
+      ) : (
         <div className="flex items-center justify-center bg-spaceCadet p-2 text-center text-white">
           <span className="mr-1 font-normal">
             Looking for a fast, easy, automated, high value for money Audit and
             risk management solution?
           </span>
-          <span className="mr-1 font-bold">Try our solutions here</span>
-          <ArrowBarRightIcon />
+          <Link href="/contact-us/inquiry-form">
+            <span className="mr-1 font-bold underline">
+              Try our solutions here
+            </span>
+          </Link>
+
+          <div>
+            <ArrowBarRightIcon />
+          </div>
         </div>
+      )}
+
+      {isMobile ? (
         <MultiCarousel
           responsive={responsive}
           ssr
@@ -76,8 +82,42 @@ const BannerCarousel = () => {
           showDots
           containerClass="container-with-dots"
           itemClass="image-item"
+          autoPlay
+          arrows={false}
+          swipeable
+          className="h-[261px] bg-[#F3F8FB]"
+          dotListClass="dot-carousel-style"
         >
-          {images.map((item) => (
+          {dataBannerCarousel.map((item) => (
+            <div
+              key={item.id}
+              className=" w-full flex-row items-center justify-center  p-4 text-center"
+            >
+              <div className="flex flex-col items-center justify-center">
+                <span className="block text-2xl font-semibold">
+                  {item.title}
+                </span>
+              </div>
+
+              <button className="bg-gradient-red mt-4 h-[33px] w-[120px] text-xs font-semibold text-white">
+                Learn more
+              </button>
+            </div>
+          ))}
+        </MultiCarousel>
+      ) : (
+        <MultiCarousel
+          responsive={responsive}
+          ssr
+          infinite
+          showDots
+          containerClass="container-with-dots"
+          itemClass="image-item"
+          autoPlay
+          arrows={false}
+          swipeable
+        >
+          {dataBannerCarousel.map((item) => (
             <div key={item.id} className="relative h-[500px] w-full">
               <Image src={item.src} alt={item.alt} fill objectFit="cover" />
               <div className="absolute right-0 top-20 m-4 p-2">
@@ -92,18 +132,20 @@ const BannerCarousel = () => {
                     </span>
                   </div>
 
-                  <button
-                    className={`mt-8 h-[50px] w-[185px] font-semibold text-white ${item.buttonStyle}`}
-                  >
-                    Learn more
-                  </button>
+                  <Link href={item.link}>
+                    <button
+                      className={`mt-8 h-[50px] w-[185px] font-semibold text-white ${item.buttonStyle}`}
+                    >
+                      Learn more
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
           ))}
         </MultiCarousel>
-      </section>
-    </>
+      )}
+    </section>
   );
 };
 

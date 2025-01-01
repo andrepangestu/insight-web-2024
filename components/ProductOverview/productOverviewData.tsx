@@ -8,7 +8,7 @@ const productOverviewData: Feature[] = [
     title: "",
     paragraph:
       "Enhance resilience and risk awareness from board level to the front line. Ideagen offers modern, intuitive systems for effective audit and risk management.",
-    link: "/services/internal-audit",
+    link: "/products/ideagen-internal-audit",
   },
   {
     id: 2,
@@ -16,7 +16,7 @@ const productOverviewData: Feature[] = [
     title: "",
     paragraph:
       "Utilize Caseware’s advanced audit solutions that integrate intelligent content to improve risk assessment and audit execution.",
-    link: "/services/internal-audit",
+    link: "/products/caseware-idea",
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ const productOverviewData: Feature[] = [
     title: "",
     paragraph:
       "SmartExporter provides an easy and flexible solution for exporting and processing SAP data, ensuring seamless access to relevant information.",
-    link: "/services/internal-audit",
+    link: "/products/smart-exporter",
   },
 ];
 export default productOverviewData;

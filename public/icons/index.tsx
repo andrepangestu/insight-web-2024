@@ -1,3 +1,4 @@
+import CircleArrowUpIcon from "@/icons/tabler-icon-circle-arrow-up.svg";
 import CircleArrowDownIcon from "@/icons/tabler-icon-circle-arrow-down.svg";
 import SortUpIcon from "@/icons/sort-up.svg";
 import ArrowBarRightIcon from "@/icons/tabler-icon-arrow-bar-right.svg";
@@ -6,6 +7,7 @@ import MessageIcon from "@/icons/message.svg";
 
 // FEATURE ICONS
 import ArrowRightRedIcon from "@/icons/arrow-right-red.svg";
+import ArrowLeftRedIcon from "@/icons/arrow-left-red.svg";
 import NetworkingManagerIcon from "@/icons/feature/networking-manager.svg";
 import BroadcastingIcon from "@/icons/feature/broadcasting.svg";
 import NetworkIcon from "@/icons/feature/network.svg";
@@ -53,12 +55,17 @@ import LearningIcon from "@/icons/about-us/learning.svg";
 import MessagingIcon from "@/icons/about-us/messaging.svg";
 import PottedPlantIcon from "@/icons/about-us/potted-plant.svg";
 
+// CONTACT US ICONS
+import LetterBoxIcon from "@/icons/letter-box.svg";
+
 export {
   ArrowRightRedIcon,
+  ArrowLeftRedIcon,
   NetworkingManagerIcon,
   BroadcastingIcon,
   NetworkIcon,
   ExtensionsFolderIcon,
+  CircleArrowUpIcon,
   CircleArrowDownIcon,
   SortUpIcon,
   ArrowBarRightIcon,
@@ -104,4 +111,5 @@ export {
   LearningIcon,
   MessagingIcon,
   PottedPlantIcon,
+  LetterBoxIcon,
 };

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import menuData from "./menuData";
 import { SortUpIcon } from "@/public/icons";
+import useDeviceType from "@/hook/use-device-type";
 
 const Header = () => {
   // Navbar toggle
@@ -35,6 +36,8 @@ const Header = () => {
     }
   };
 
+  const { isMobile } = useDeviceType();
+
   return (
     <>
       <header
@@ -56,15 +59,15 @@ const Header = () => {
                 <Image
                   src="/images/logo/logo.svg"
                   alt="logo"
-                  width={140}
-                  height={30}
+                  width={isMobile ? 160 : 140}
+                  height={isMobile ? 47 : 30}
                   className="w-full"
                 />
                 <Image
                   src="/images/logo/logo.svg"
                   alt="logo"
-                  width={140}
-                  height={30}
+                  width={isMobile ? 160 : 140}
+                  height={isMobile ? 47 : 30}
                   className="hidden w-full"
                 />
               </Link>
@@ -96,7 +99,7 @@ const Header = () => {
                 </button>
                 <nav
                   id="navbarCollapse"
-                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
+                  className={`navbar absolute right-0 z-30 w-[250px] w-full rounded border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
                     navbarOpen
                       ? "visibility top-full opacity-100"
                       : "invisible top-[120%] opacity-0"
@@ -107,6 +110,7 @@ const Header = () => {
                       <li key={menuItem.id} className="group relative">
                         {menuItem.path ? (
                           <Link
+                            onClick={() => setNavbarOpen(false)}
                             href={menuItem.path}
                             className={`flex py-2 text-base font-semibold text-spaceCadet group-hover:opacity-70 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6`}
                           >
@@ -133,6 +137,7 @@ const Header = () => {
                                   href={submenuItem.path}
                                   key={submenuItem.id}
                                   className="block rounded py-2.5 text-sm text-dark hover:opacity-70 lg:px-3"
+                                  onClick={() => setNavbarOpen(false)}
                                 >
                                   {submenuItem.title}
                                 </Link>

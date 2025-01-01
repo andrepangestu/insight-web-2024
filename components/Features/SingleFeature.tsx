@@ -5,16 +5,16 @@ import Link from "next/link";
 const SingleFeature = ({ feature }: { feature: Feature }) => {
   const { icon, title, paragraph } = feature;
   return (
-    <div className="wow fadeInUp" data-wow-delay=".15s">
-      <div className="mb-8 flex items-center justify-center text-primary">
+    <div className="wow fadeInUp w-3/6 md:w-full" data-wow-delay=".15s">
+      <div className="mb-4 flex items-center justify-center text-primary md:mb-8">
         {icon}
       </div>
       {title && (
-        <span className="mb-5 flex items-center justify-center text-center text-base font-semibold text-primaryText">
+        <span className="mb-4 flex items-center justify-center text-center text-base font-semibold text-primaryText">
           {title}
         </span>
       )}
-      <p className="mb-8 text-center text-sm font-medium leading-relaxed text-primaryTextBody">
+      <p className="mb-4 text-center text-sm font-medium leading-relaxed text-primaryTextBody md:mb-8 md:w-full">
         {paragraph}
       </p>
 

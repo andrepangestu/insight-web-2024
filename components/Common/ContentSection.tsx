@@ -16,19 +16,19 @@ const ContentSection: React.FC<ContentSectionProps> = ({
   reverse = false,
 }) => {
   return (
-    <section className="container my-16 lg:px-40 xl:px-60">
+    <section className="container md:my-16 lg:px-40 xl:px-60">
       <div
         className={`flex grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-3`}
       >
         <div
-          className={`${
+          className={`flex justify-center md:${
             reverse && "order-last flex justify-end"
-          } md:col-span-1`}
+          } mb-6 md:col-span-1`}
         >
           <Image src={imageSrc} alt={imageAlt} width={200} height={200} />
         </div>
-        <div className="md:col-span-2">
-          <span className="mb-6 inline-block text-base font-semibold text-primaryText">
+        <div className="mb-12 text-center md:col-span-2">
+          <span className="mb-4 inline-block text-base font-semibold text-primaryText md:mb-6">
             {title}
           </span>
           <span className="inline-block text-sm font-medium text-primaryTextBody">

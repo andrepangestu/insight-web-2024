@@ -53,12 +53,12 @@ const Testimonials = () => {
           ssr
           infinite
           containerClass="container-with-dots"
-          itemClass="image-item"
-          className="h-[300px] w-full bg-cultured"
+          itemClass="image-item px-4 py-6"
+          className="w-full bg-cultured"
         >
           <div className="flex items-center justify-center">
-            <div className="w-[800px]">
-              <div className="mb-4 text-center text-lg italic text-primaryText">
+            <div className="md:w-[800px]">
+              <div className="mb-4 text-center text-base italic text-primaryText md:text-lg">
                 “ Two years ago we didnt expected that in this pandemic phase,
                 IDES and Pentana Audit software utility could really help in a
                 remote audit process, in term of desk audit process as well as
@@ -69,11 +69,10 @@ const Testimonials = () => {
                 beginning of desk audit process. “
               </div>
 
-              <div className="mb-2 text-center text-base font-bold text-primaryTextBlue">
+              <div className="mb-2 text-center text-sm font-bold text-primaryTextBlue md:text-base">
                 Widodo
               </div>
-
-              <div className="text-center text-sm font-medium text-primaryTextBlue">
+              <div className="text-center text-xs font-medium text-primaryTextBlue md:text-sm">
                 Chief Audit Officer, Indonesia Port Corporation
               </div>
             </div>
