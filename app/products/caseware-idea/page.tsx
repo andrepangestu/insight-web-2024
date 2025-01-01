@@ -1,23 +1,29 @@
+"use client";
+
 import Banner from "@/components/Banner";
 import ContentSection from "@/components/Common/ContentSection";
 import ScrollUp from "@/components/Common/ScrollUp";
-import SectionDescription from "@/components/Common/SectionDescription";
 import SectionTitle from "@/components/Common/SectionTitle";
 import React from "react";
 import { casewareIdeaKeyFeatures, casewareIdeaData } from "./data";
 import ContactUsSection from "@/components/Section/ContactUsSection";
 import KeyFeatures from "@/components/KeyFeature";
+import useDeviceType from "@/hook/use-device-type";
 
 const casewareIdeaPage = () => {
+  const { isMobile, isDesktop } = useDeviceType();
+  const bannerSrc = isMobile
+    ? "/images/products/caseware-idea/caseware-idea-mobile-banner.svg"
+    : "/images/products/caseware-idea/caseware-idea-banner.svg";
+
   return (
     <>
       <ScrollUp />
-
       <Banner
-        src="/images/products/caseware-idea/caseware-idea-banner.svg"
+        src={bannerSrc}
         alt="Banner Caseware IDEA"
         logoSrc="/images/products/caseware-idea/caseware-logo.svg"
-        withRectangle
+        withRectangle={isDesktop}
       />
 
       <SectionTitle

@@ -1,26 +1,33 @@
+"use client";
+
 import Banner from "@/components/Banner";
 import ContentSection from "@/components/Common/ContentSection";
 import ScrollUp from "@/components/Common/ScrollUp";
-import SectionDescription from "@/components/Common/SectionDescription";
 import SectionTitle from "@/components/Common/SectionTitle";
 import React from "react";
 import {
-    casewareAuditSolutionKeyFeatures,
-    casewareAuditSolutionData,
+  casewareAuditSolutionKeyFeatures,
+  casewareAuditSolutionData,
 } from "./data";
 import ContactUsSection from "@/components/Section/ContactUsSection";
 import KeyFeatures from "@/components/KeyFeature";
+import useDeviceType from "@/hook/use-device-type";
 
 const casewareAuditSolutionPage = () => {
+  const { isMobile, isDesktop } = useDeviceType();
+  const bannerSrc = isMobile
+    ? "/images/products/caseware-audit-solution/caseware-audit-solution-mobile-banner.svg"
+    : "/images/products/caseware-audit-solution/caseware-audit-solution-banner.svg";
+
   return (
     <>
       <ScrollUp />
 
       <Banner
-        src="/images/products/caseware-audit-solution/caseware-audit-solution-banner.svg"
+        src={bannerSrc}
         alt="Banner Caseware Audit Solution"
         logoSrc="/images/products/caseware-logo.svg"
-        withRectangle
+        withRectangle={isDesktop}
       />
 
       <SectionTitle

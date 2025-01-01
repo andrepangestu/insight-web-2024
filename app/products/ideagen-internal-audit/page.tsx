@@ -1,3 +1,5 @@
+"use client";
+
 import Banner from "@/components/Banner";
 import ScrollUp from "@/components/Common/ScrollUp";
 import SectionTitle from "@/components/Common/SectionTitle";
@@ -8,16 +10,22 @@ import {
   ideagenInternalAuditKeyFeatures,
 } from "./data";
 import KeyFeatures from "@/components/KeyFeature";
+import useDeviceType from "@/hook/use-device-type";
 
 const InternalAuditPage = () => {
+  const { isMobile, isDesktop } = useDeviceType();
+  const bannerSrc = isMobile
+    ? "/images/products/ideagen-internal-audit/ideagen-internal-audit-mobile-banner.svg"
+    : "/images/products/ideagen-internal-audit/ideagen-internal-audit-banner.svg";
+
   return (
     <>
       <ScrollUp />
       <Banner
-        src="/images/products/ideagen-internal-audit/ideagen-internal-audit-banner.svg"
+        src={bannerSrc}
         alt="Banner Ideagen Internal Audit"
         logoSrc="/images/products/ideagen-internal-audit/ideagen-internal-audit-logo.svg"
-        withRectangle
+        withRectangle={isDesktop}
       />
 
       <SectionTitle

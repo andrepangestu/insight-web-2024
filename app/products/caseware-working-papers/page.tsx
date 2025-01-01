@@ -1,3 +1,5 @@
+"use client";
+
 import Banner from "@/components/Banner";
 import ContentSection from "@/components/Common/ContentSection";
 import ScrollUp from "@/components/Common/ScrollUp";
@@ -9,17 +11,22 @@ import {
 } from "./data";
 import ContactUsSection from "@/components/Section/ContactUsSection";
 import KeyFeatures from "@/components/KeyFeature";
+import useDeviceType from "@/hook/use-device-type";
 
 const casewareWorkingPapersPage = () => {
+  const { isMobile, isDesktop } = useDeviceType();
+  const bannerSrc = isMobile
+    ? "/images/products/caseware-working-papers/caseware-working-papers-mobile-banner.svg"
+    : "/images/products/caseware-working-papers/caseware-working-papers-banner.svg";
+
   return (
     <>
       <ScrollUp />
-
       <Banner
-        src="/images/products/caseware-working-papers/caseware-working-papers-banner.svg"
+        src={bannerSrc}
         alt="Banner Caseware Working Papers"
         logoSrc="/images/products/caseware-logo.svg"
-        withRectangle
+        withRectangle={isDesktop}
       />
 
       <SectionTitle

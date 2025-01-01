@@ -1,26 +1,32 @@
+"use client";
+
 import Banner from "@/components/Banner";
 import ContentSection from "@/components/Common/ContentSection";
 import ScrollUp from "@/components/Common/ScrollUp";
-import SectionDescription from "@/components/Common/SectionDescription";
 import SectionTitle from "@/components/Common/SectionTitle";
 import React from "react";
 import {
-    casewareSmartExporterKeyFeatures,
-    casewareSmartExporterData,
+  casewareSmartExporterKeyFeatures,
+  casewareSmartExporterData,
 } from "./data";
 import ContactUsSection from "@/components/Section/ContactUsSection";
 import KeyFeatures from "@/components/KeyFeature";
+import useDeviceType from "@/hook/use-device-type";
 
 const casewareSmartExporterPage = () => {
+  const { isMobile, isDesktop } = useDeviceType();
+  const bannerSrc = isMobile
+    ? "/images/products/smart-exporter/smart-exporter-mobile-banner.svg"
+    : "/images/products/smart-exporter/smart-exporter-banner.svg";
+
   return (
     <>
       <ScrollUp />
-
       <Banner
-        src="/images/products/smart-exporter/smart-exporter-banner.svg"
+        src={bannerSrc}
         alt="Banner SmartExporter"
         logoSrc="/images/products/caseware-logo.svg"
-        withRectangle
+        withRectangle={isDesktop}
       />
 
       <SectionTitle

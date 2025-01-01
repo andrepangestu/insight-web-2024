@@ -10,7 +10,7 @@ const ContactUsSection: React.FC<ContactUsSectionProps> = (props) => {
   return (
     <section className="bg-spaceCadet p-8 md:py-4">
       <div className="w-full flex-row items-center justify-center text-center">
-        <span className="text-base font-normal text-white">
+        <span className="block text-base font-normal text-white md:inline-block">
           {props.textContent ??
             "Connect with our audit experts to explore internal audit solutions"}
         </span>

@@ -5,7 +5,7 @@ const Copyright = () => {
   return (
     <section className="container py-8 md:py-10">
       <div className="flex items-center justify-between">
-        <div>
+        <div className="w-11/12">
           <span className="mr-1 text-sm font-normal text-primaryText">
             Copyright 2024 © All Rights Reserved by
           </span>

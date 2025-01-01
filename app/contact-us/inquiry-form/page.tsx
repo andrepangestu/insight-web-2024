@@ -26,9 +26,8 @@ const InquiryFormPage = () => {
       </div>
 
       <div className="container my-16">
-        <div className="px-96">
+        <div className="mx-auto w-full md:w-6/12">
           <InquiryForm />
-          {/* <Contact /> */}
         </div>
       </div>
     </>

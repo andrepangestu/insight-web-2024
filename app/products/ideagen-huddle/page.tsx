@@ -1,3 +1,5 @@
+"use client";
+
 import Banner from "@/components/Banner";
 import ContentSection from "@/components/Common/ContentSection";
 import ScrollUp from "@/components/Common/ScrollUp";
@@ -6,17 +8,22 @@ import React from "react";
 import { ideagenHuddleKeyFeatures, ideagenRiskManagementData } from "./data";
 import ContactUsSection from "@/components/Section/ContactUsSection";
 import KeyFeatures from "@/components/KeyFeature";
+import useDeviceType from "@/hook/use-device-type";
 
 const ideagenHuddlePage = () => {
+  const { isMobile, isDesktop } = useDeviceType();
+  const bannerSrc = isMobile
+    ? "/images/products/ideagen-huddle/ideagen-huddle-mobile-banner.svg"
+    : "/images/products/ideagen-huddle/ideagen-huddle-banner.svg";
+
   return (
     <>
       <ScrollUp />
-
       <Banner
-        src="/images/products/ideagen-huddle/ideagen-huddle-banner.svg"
+        src={bannerSrc}
         alt="Banner Ideagen Huddle"
         logoSrc="/images/products/ideagen-huddle/ideagen-huddle-logo.svg"
-        withRectangle
+        withRectangle={isDesktop}
       />
 
       <SectionTitle

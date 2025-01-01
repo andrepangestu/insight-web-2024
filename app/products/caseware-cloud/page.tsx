@@ -1,26 +1,29 @@
+"use client";
+
 import Banner from "@/components/Banner";
 import ContentSection from "@/components/Common/ContentSection";
 import ScrollUp from "@/components/Common/ScrollUp";
-import SectionDescription from "@/components/Common/SectionDescription";
 import SectionTitle from "@/components/Common/SectionTitle";
 import React from "react";
-import {
-    casewareCloudKeyFeatures,
-    casewareCloudData,
-} from "./data";
+import { casewareCloudKeyFeatures, casewareCloudData } from "./data";
 import ContactUsSection from "@/components/Section/ContactUsSection";
 import KeyFeatures from "@/components/KeyFeature";
+import useDeviceType from "@/hook/use-device-type";
 
 const casewareCloudPage = () => {
+  const { isMobile, isDesktop } = useDeviceType();
+  const bannerSrc = isMobile
+    ? "/images/products/caseware-cloud/caseware-cloud-mobile-banner.svg"
+    : "/images/products/caseware-cloud/caseware-cloud-banner.svg";
+
   return (
     <>
       <ScrollUp />
-
       <Banner
-        src="/images/products/caseware-cloud/caseware-cloud-banner.svg"
+        src={bannerSrc}
         alt="Banner Caseware Cloud"
         logoSrc="/images/products/caseware-logo.svg"
-        withRectangle
+        withRectangle={isDesktop}
       />
 
       <SectionTitle

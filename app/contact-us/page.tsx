@@ -71,7 +71,7 @@ const ContactUsPage = () => {
           Inquiry Form
         </span>
 
-        <div className="px-96">
+        <div className="mx-auto w-full md:w-6/12">
           <InquiryForm />
         </div>
       </div>

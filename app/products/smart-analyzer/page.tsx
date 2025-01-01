@@ -1,23 +1,28 @@
+"use client";
+
 import Banner from "@/components/Banner";
 import ContentSection from "@/components/Common/ContentSection";
 import ScrollUp from "@/components/Common/ScrollUp";
-import SectionDescription from "@/components/Common/SectionDescription";
 import SectionTitle from "@/components/Common/SectionTitle";
 import React from "react";
 import { casewareSmartAnalyzerData } from "./data";
 import ContactUsSection from "@/components/Section/ContactUsSection";
-import KeyFeatures from "@/components/KeyFeature";
+import useDeviceType from "@/hook/use-device-type";
 
 const casewareSmartAnalyzerPage = () => {
+  const { isMobile, isDesktop } = useDeviceType();
+  const bannerSrc = isMobile
+    ? "/images/products/smart-analyzer/smart-analyzer-mobile-banner.svg"
+    : "/images/products/smart-analyzer/smart-analyzer-banner.svg";
+
   return (
     <>
       <ScrollUp />
-
       <Banner
-        src="/images/products/smart-analyzer/smart-analyzer-banner.svg"
+        src={bannerSrc}
         alt="Banner Smart Analyzer"
         logoSrc="/images/products/caseware-logo.svg"
-        withRectangle
+        withRectangle={isDesktop}
       />
 
       <SectionTitle

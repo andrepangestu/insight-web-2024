@@ -134,7 +134,7 @@ const InquiryForm = () => {
           className="mb-6 w-full border border-lightSilver px-6 py-3 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none"
         />
 
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-2">
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-2">
           <input
             type="input-captcha"
             name="input-captcha"
