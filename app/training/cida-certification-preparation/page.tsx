@@ -36,7 +36,7 @@ const CidaCertificationPage = () => {
         services={[
           "Use IDEA tasks in the context of their daily work..",
           "Write the CIDA exam.",
-          "Apply data analytics in a real-life situations."
+          "Apply data analytics in a real-life situations.",
         ]}
       />
 
@@ -45,13 +45,13 @@ const CidaCertificationPage = () => {
           Course Outline
         </span>
 
-        <div className="grid grid-cols-3 px-52">
+        <div className="container mx-auto grid grid-cols-1 md:w-4/5 md:grid-cols-2 lg:grid-cols-3">
           <ListSection
             items={[
-                "Importing and Reconciling Project Data",
-                "Profiling and Isolating Payment Data",
-                "Identifying Irregularities and Using Field Manipulation",
-                "Summarizing Data and Working with Multiple Files"
+              "Importing and Reconciling Project Data",
+              "Profiling and Isolating Payment Data",
+              "Identifying Irregularities and Using Field Manipulation",
+              "Summarizing Data and Working with Multiple Files",
             ]}
           />
         </div>

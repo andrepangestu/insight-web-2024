@@ -16,10 +16,8 @@ const ContentSection: React.FC<ContentSectionProps> = ({
   reverse = false,
 }) => {
   return (
-    <section className="container md:my-16 lg:px-40 xl:px-60">
-      <div
-        className={`flex grid grid-cols-1 items-center md:grid-cols-2 lg:grid-cols-3`}
-      >
+    <section className="container mx-auto md:my-8 lg:px-40 xl:px-60">
+      <div className={`flex grid grid-cols-1 items-center md:grid-cols-3`}>
         <div
           className={`flex justify-center md:justify-start ${
             reverse && "md:order-last md:flex md:justify-end"

@@ -17,14 +17,15 @@ const SectionTitle = ({
   mb?: string;
   description?: string;
 }) => {
-  const { isMobile } = useDeviceType();
+  const { isMobile, isTablet, isDesktop } = useDeviceType();
+
   return (
     <div
-      className={`wow fadeInUp container w-full ${
+      className={`wow fadeInUp container mb-[30px] w-full md:mb-[50px] lg:mb-[60px] lg:mb-[80px] ${
         center ? "mx-auto text-center" : ""
       }`}
       data-wow-delay=".1s"
-      style={{ maxWidth: width, marginBottom: isMobile ? "50px" : "100px" }}
+      style={{ maxWidth: width }}
     >
       <div
         className={`${

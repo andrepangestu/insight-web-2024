@@ -6,7 +6,7 @@ interface SectionDescriptionProps {
 
 const SectionDescription: React.FC<SectionDescriptionProps> = ({ texts }) => {
   return (
-    <section className="container mb-12 md:mx-24 md:mb-16">
+    <section className="container mx-auto mx-auto mb-12 md:w-3/5">
       {texts.map((text, index) => (
         <span
           key={index}

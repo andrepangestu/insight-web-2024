@@ -11,18 +11,18 @@ const ProductOverview = () => {
 
   return (
     <>
-      <section id="features" className="bg-cultured py-6 md:py-12">
+      <section id="features" className="bg-cultured py-6 md:py-8 lg:py-12">
         <div className="container">
           <SectionTitle
             title="Product Overview"
             paragraph="Empower your business priorities with our full-service suite of cutting-edge technology solutions."
             center
-            mb={isMobile ? "30px" : "100px"}
+            mb={isMobile ? "30px" : "50px"}
           />
 
-          <div className="flex grid grid-cols-1 items-center justify-center gap-12 md:grid-cols-2 md:gap-x-8 md:gap-y-14 lg:grid-cols-3">
+          <div className="flex grid grid-cols-1 items-center justify-center gap-12 md:grid-cols-3 md:gap-x-8 md:gap-y-14 lg:grid-cols-3">
             {productOverviewData.map((feature) => (
-              <SingleFeature key={feature.id} feature={feature} />
+              <SingleFeature key={feature.id} feature={feature} withEllipsis />
             ))}
           </div>
         </div>

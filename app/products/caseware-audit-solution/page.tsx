@@ -14,10 +14,21 @@ import KeyFeatures from "@/components/KeyFeature";
 import useDeviceType from "@/hook/use-device-type";
 
 const casewareAuditSolutionPage = () => {
-  const { isMobile, isDesktop } = useDeviceType();
-  const bannerSrc = isMobile
-    ? "/images/products/caseware-audit-solution/caseware-audit-solution-mobile-banner.svg"
-    : "/images/products/caseware-audit-solution/caseware-audit-solution-banner.svg";
+  const { isMobile, isDesktop, isTablet } = useDeviceType();
+  let bannerSrc;
+  switch (true) {
+    case isMobile:
+      bannerSrc =
+        "/images/products/caseware-audit-solution/caseware-audit-solution-mobile-banner.svg";
+      break;
+    case isTablet:
+      bannerSrc =
+        "/images/products/caseware-audit-solution/caseware-audit-solution-tablet-banner.svg";
+      break;
+    default:
+      bannerSrc =
+        "/images/products/caseware-audit-solution/caseware-audit-solution-banner.svg";
+  }
 
   return (
     <>

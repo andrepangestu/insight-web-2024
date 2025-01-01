@@ -11,6 +11,7 @@ const menuData: Menu[] = [
     id: 2,
     title: "Solutions",
     newTab: false,
+    path: "solutions",
     submenu: [
       {
         id: 21,
@@ -78,6 +79,7 @@ const menuData: Menu[] = [
     id: 3,
     title: "Products",
     newTab: false,
+    path: "products",
     submenu: [
       {
         id: 31,
@@ -145,6 +147,7 @@ const menuData: Menu[] = [
     id: 4,
     title: "Training",
     newTab: false,
+    path: "training",
     submenu: [
       {
         id: 41,

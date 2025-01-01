@@ -14,10 +14,20 @@ import KeyFeatures from "@/components/KeyFeature";
 import useDeviceType from "@/hook/use-device-type";
 
 const casewareSmartExporterPage = () => {
-  const { isMobile, isDesktop } = useDeviceType();
-  const bannerSrc = isMobile
-    ? "/images/products/smart-exporter/smart-exporter-mobile-banner.svg"
-    : "/images/products/smart-exporter/smart-exporter-banner.svg";
+  const { isMobile, isDesktop, isTablet } = useDeviceType();
+  let bannerSrc;
+  switch (true) {
+    case isMobile:
+      bannerSrc =
+        "/images/products/smart-exporter/smart-exporter-mobile-banner.svg";
+      break;
+    case isTablet:
+      bannerSrc =
+        "/images/products/smart-exporter/smart-exporter-tablet-banner.svg";
+      break;
+    default:
+      bannerSrc = "/images/products/smart-exporter/smart-exporter-banner.svg";
+  }
 
   return (
     <>

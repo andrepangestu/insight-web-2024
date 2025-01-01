@@ -5,7 +5,7 @@ const ContactUsTraining = () => {
   return (
     <section className="bg-spaceCadet py-4">
       <div className="w-full flex-row items-center justify-center text-center">
-        <span className="text-base font-normal text-white">
+        <span className="mb-2 block text-base font-normal text-white lg:inline-block">
           Contact us for details information about Training
         </span>
 

@@ -7,12 +7,12 @@ import MultiCarousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { dataBannerCarousel } from "./data";
 import useDeviceType from "@/hook/use-device-type";
-
-import "./styles.css";
 import Link from "next/link";
 
+import "./styles.css";
+
 const BannerCarousel = () => {
-  const { isMobile } = useDeviceType();
+  const { isMobile, isTablet } = useDeviceType();
 
   const responsive = {
     superLargeDesktop: {
@@ -36,17 +36,17 @@ const BannerCarousel = () => {
   return (
     <section
       id="home"
-      className="relative z-10 w-full overflow-hidden pt-[90px] md:pb-16 md:pb-16 md:pt-[120px] lg:pb-16 xl:pb-16 2xl:pb-16"
+      className="relative z-10 w-full overflow-hidden pt-[90px] lg:pb-16 lg:pt-[120px] xl:pb-16 2xl:pb-16"
     >
-      {isMobile ? (
-        <div className="flex items-center justify-between bg-spaceCadet p-4 text-xs text-white">
+      {isMobile || isTablet ? (
+        <div className="flex items-center justify-between bg-spaceCadet p-4 text-xs text-white md:justify-center">
           <div>
             <span className="mr-1 font-normal">
               Looking for a fast, easy, automated, high value for money Audit
               and risk management solution?
             </span>
             <Link href="/contact-us/inquiry-form">
-              <span className="font-bold underline">
+              <span className="font-bold underline md:mr-1">
                 Try our solutions here
               </span>
             </Link>
@@ -91,7 +91,7 @@ const BannerCarousel = () => {
           {dataBannerCarousel.map((item) => (
             <div
               key={item.id}
-              className=" w-full flex-row items-center justify-center  p-4 text-center"
+              className=" w-full flex-row items-center justify-center p-4 text-center"
             >
               <div className="flex flex-col items-center justify-center">
                 <span className="block text-2xl font-semibold">
@@ -121,8 +121,8 @@ const BannerCarousel = () => {
             <div key={item.id} className="relative h-[500px] w-full">
               <Image src={item.src} alt={item.alt} fill objectFit="cover" />
               <div className="absolute right-0 top-20 m-4 p-2">
-                <div className="flex w-[700px] flex-col items-center justify-center">
-                  <div>
+                <div className="flex w-[700px] flex-col lg:items-center lg:justify-center">
+                  <div className="md:text-right">
                     <span
                       className={`text-[30px] font-bold ${
                         item.id === 3 ? "text-white" : "text-primaryText"
@@ -132,7 +132,7 @@ const BannerCarousel = () => {
                     </span>
                   </div>
 
-                  <Link href={item.link}>
+                  <Link href={item.link} className="md:text-right">
                     <button
                       className={`mt-8 h-[50px] w-[185px] font-semibold text-white ${item.buttonStyle}`}
                     >

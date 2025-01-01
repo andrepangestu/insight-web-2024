@@ -10,10 +10,20 @@ import ContactUsSection from "@/components/Section/ContactUsSection";
 import useDeviceType from "@/hook/use-device-type";
 
 const casewareSmartAnalyzerPage = () => {
-  const { isMobile, isDesktop } = useDeviceType();
-  const bannerSrc = isMobile
-    ? "/images/products/smart-analyzer/smart-analyzer-mobile-banner.svg"
-    : "/images/products/smart-analyzer/smart-analyzer-banner.svg";
+  const { isMobile, isDesktop, isTablet } = useDeviceType();
+  let bannerSrc;
+  switch (true) {
+    case isMobile:
+      bannerSrc =
+        "/images/products/smart-analyzer/smart-analyzer-mobile-banner.svg";
+      break;
+    case isTablet:
+      bannerSrc =
+        "/images/products/smart-analyzer/smart-analyzer-tablet-banner.svg";
+      break;
+    default:
+      bannerSrc = "/images/products/smart-analyzer/smart-analyzer-banner.svg";
+  }
 
   return (
     <>

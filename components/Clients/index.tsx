@@ -69,7 +69,7 @@ const Clients = () => {
           )
         }
       >
-        <div className="grid grid-cols-3 gap-4 py-4 md:grid-cols-3 md:gap-x-8 md:gap-y-10 lg:grid-cols-6">
+        <div className="grid grid-cols-3 gap-4 py-4 md:grid-cols-6 md:gap-4 lg:grid-cols-6 lg:gap-x-8 lg:gap-y-10">
           {clientData.map((client) => (
             <div className="w-full" key={client.category}>
               <div className="mb-4 text-xs font-semibold text-primaryTextBlue md:text-sm">

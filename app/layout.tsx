@@ -22,7 +22,7 @@ export default function RootLayout({
       <body>
         <Providers>
           <Header />
-          <div className="min-h-screen w-full">{children}</div>
+          {children}
           <Footer />
           <ScrollToTop />
         </Providers>

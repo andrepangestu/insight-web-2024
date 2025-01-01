@@ -14,10 +14,21 @@ import KeyFeatures from "@/components/KeyFeature";
 import useDeviceType from "@/hook/use-device-type";
 
 const IdeagenRiskManagementPage = () => {
-  const { isMobile, isDesktop } = useDeviceType();
-  const bannerSrc = isMobile
-    ? "/images/products/ideagen-risk-management/ideagen-risk-management-mobile-banner.svg"
-    : "/images/products/ideagen-risk-management/ideagen-risk-management-banner.svg";
+  const { isMobile, isDesktop, isTablet } = useDeviceType();
+  let bannerSrc;
+  switch (true) {
+    case isMobile:
+      bannerSrc =
+        "/images/products/ideagen-risk-management/ideagen-risk-management-mobile-banner.svg";
+      break;
+    case isTablet:
+      bannerSrc =
+        "/images/products/ideagen-risk-management/ideagen-risk-management-tablet-banner.svg";
+      break;
+    default:
+      bannerSrc =
+        "/images/products/ideagen-risk-management/ideagen-risk-management-banner.svg";
+  }
 
   return (
     <>

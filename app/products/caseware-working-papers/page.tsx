@@ -14,10 +14,21 @@ import KeyFeatures from "@/components/KeyFeature";
 import useDeviceType from "@/hook/use-device-type";
 
 const casewareWorkingPapersPage = () => {
-  const { isMobile, isDesktop } = useDeviceType();
-  const bannerSrc = isMobile
-    ? "/images/products/caseware-working-papers/caseware-working-papers-mobile-banner.svg"
-    : "/images/products/caseware-working-papers/caseware-working-papers-banner.svg";
+  const { isMobile, isDesktop, isTablet } = useDeviceType();
+  let bannerSrc;
+  switch (true) {
+    case isMobile:
+      bannerSrc =
+        "/images/products/caseware-working-papers/caseware-working-papers-mobile-banner.svg";
+      break;
+    case isTablet:
+      bannerSrc =
+        "/images/products/caseware-working-papers/caseware-working-papers-tablet-banner.svg";
+      break;
+    default:
+      bannerSrc =
+        "/images/products/caseware-working-papers/caseware-working-papers-banner.svg";
+  }
 
   return (
     <>

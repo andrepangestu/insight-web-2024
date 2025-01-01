@@ -1,10 +1,12 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import menuData from "./menuData";
 import { SortUpIcon } from "@/public/icons";
 import useDeviceType from "@/hook/use-device-type";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   // Navbar toggle
@@ -12,6 +14,9 @@ const Header = () => {
   const navbarToggleHandler = () => {
     setNavbarOpen(!navbarOpen);
   };
+
+  const pathname = usePathname();
+  const splitPathname = pathname.split("/");
 
   // Sticky Navbar
   const [sticky, setSticky] = useState(false);
@@ -105,48 +110,64 @@ const Header = () => {
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >
-                  <ul className="block lg:flex lg:space-x-12">
-                    {menuData.map((menuItem, index) => (
-                      <li key={menuItem.id} className="group relative">
-                        {menuItem.path ? (
-                          <Link
-                            onClick={() => setNavbarOpen(false)}
-                            href={menuItem.path}
-                            className={`flex py-2 text-base font-semibold text-spaceCadet group-hover:opacity-70 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6`}
-                          >
-                            {menuItem.title}
-                          </Link>
-                        ) : (
-                          <>
-                            <a
-                              onClick={() => handleSubmenu(index)}
-                              className="flex cursor-pointer items-center justify-between py-2 text-base font-semibold text-spaceCadet group-hover:opacity-70 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6"
-                            >
-                              {menuItem.title}
-                              <span className="pl-1">
-                                <SortUpIcon />
-                              </span>
-                            </a>
-                            <div
-                              className={`submenu relative left-0 top-full rounded-md bg-white transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
-                                openIndex === index ? "block" : "hidden"
+                  <ul className="block lg:flex lg:items-center lg:space-x-12">
+                    {menuData.map((menuItem, index) => {
+                      return (
+                        <li key={menuItem.id} className="group relative">
+                          {menuItem.submenu ? (
+                            <>
+                              <a
+                                onClick={() => handleSubmenu(index)}
+                                className={`flex cursor-pointer items-center justify-between py-2 text-base font-semibold  text-primaryRed group-hover:opacity-70 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                                  splitPathname[1] === menuItem.path
+                                    ? "text-primaryRed"
+                                    : "text-spaceCadet"
+                                }`}
+                              >
+                                {menuItem.title}
+                                <span className="pl-1">
+                                  <SortUpIcon />
+                                </span>
+                              </a>
+                              <div
+                                className={`submenu relative left-0 top-full rounded-md bg-white transition-[top] duration-300 group-hover:opacity-100 lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
+                                  openIndex === index ? "block" : "hidden"
+                                }`}
+                              >
+                                {menuItem.submenu.map((submenuItem) => {
+                                  return (
+                                    <Link
+                                      href={submenuItem.path}
+                                      key={submenuItem.id}
+                                      className={`block rounded py-2.5 text-sm text-dark hover:opacity-70 lg:px-3  ${
+                                        pathname === submenuItem.path
+                                          ? "text-primaryRed"
+                                          : "text-primaryText"
+                                      }`}
+                                      onClick={() => setNavbarOpen(false)}
+                                    >
+                                      {submenuItem.title}
+                                    </Link>
+                                  );
+                                })}
+                              </div>
+                            </>
+                          ) : (
+                            <Link
+                              onClick={() => setNavbarOpen(false)}
+                              href={menuItem.path}
+                              className={`flex py-2 text-base font-semibold  group-hover:opacity-70 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                                pathname === menuItem.path
+                                  ? "text-primaryRed"
+                                  : "text-spaceCadet"
                               }`}
                             >
-                              {menuItem.submenu.map((submenuItem) => (
-                                <Link
-                                  href={submenuItem.path}
-                                  key={submenuItem.id}
-                                  className="block rounded py-2.5 text-sm text-dark hover:opacity-70 lg:px-3"
-                                  onClick={() => setNavbarOpen(false)}
-                                >
-                                  {submenuItem.title}
-                                </Link>
-                              ))}
-                            </div>
-                          </>
-                        )}
-                      </li>
-                    ))}
+                              {menuItem.title}
+                            </Link>
+                          )}
+                        </li>
+                      );
+                    })}
                   </ul>
                 </nav>
               </div>

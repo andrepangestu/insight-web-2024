@@ -1,8 +1,15 @@
 import { ArrowRightRedIcon } from "@/public/icons";
 import { Feature } from "@/types/feature";
 import Link from "next/link";
+import "./styles.css";
 
-const SingleFeature = ({ feature }: { feature: Feature }) => {
+const SingleFeature = ({
+  feature,
+  withEllipsis,
+}: {
+  feature: Feature;
+  withEllipsis?: boolean;
+}) => {
   const { icon, title, paragraph } = feature;
   return (
     <div className="wow fadeInUp md:w-full" data-wow-delay=".15s">
@@ -14,7 +21,11 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
           {title}
         </span>
       )}
-      <p className="mb-4 text-center text-sm font-medium leading-relaxed text-primaryTextBody md:mb-8 md:w-full">
+      <p
+        className={`${
+          withEllipsis && "text-ellipsis"
+        } mb-4  text-center text-sm font-medium leading-relaxed text-primaryTextBody md:mb-8 md:w-full`}
+      >
         {paragraph}
       </p>
 

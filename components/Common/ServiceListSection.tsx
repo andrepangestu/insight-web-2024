@@ -13,7 +13,7 @@ const ServiceListSection: React.FC<ServiceListSectionProps> = ({
   withoutDivider,
 }) => {
   return (
-    <section className="container md:mx-24 md:mb-16">
+    <section className="container mx-auto lg:mx-24 lg:mb-16">
       {!withoutDivider && (
         <hr className="mb-12 w-full border-b border-lightSilver md:my-16" />
       )}

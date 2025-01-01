@@ -11,10 +11,20 @@ import KeyFeatures from "@/components/KeyFeature";
 import useDeviceType from "@/hook/use-device-type";
 
 const ideagenHuddlePage = () => {
-  const { isMobile, isDesktop } = useDeviceType();
-  const bannerSrc = isMobile
-    ? "/images/products/ideagen-huddle/ideagen-huddle-mobile-banner.svg"
-    : "/images/products/ideagen-huddle/ideagen-huddle-banner.svg";
+  const { isMobile, isDesktop, isTablet } = useDeviceType();
+  let bannerSrc;
+  switch (true) {
+    case isMobile:
+      bannerSrc =
+        "/images/products/ideagen-huddle/ideagen-huddle-mobile-banner.svg";
+      break;
+    case isTablet:
+      bannerSrc =
+        "/images/products/ideagen-huddle/ideagen-huddle-tablet-banner.svg";
+      break;
+    default:
+      bannerSrc = "/images/products/ideagen-huddle/ideagen-huddle-banner.svg";
+  }
 
   return (
     <>

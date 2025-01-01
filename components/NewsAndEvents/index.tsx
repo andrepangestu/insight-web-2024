@@ -8,7 +8,7 @@ import "react-multi-carousel/lib/styles.css";
 const newsAndEventData: NewsAndEvent[] = [
   {
     id: 1,
-    type: "Product News 1",
+    type: "Product News",
     title: "Expand Your Audit Analytics Landscape: Introducing IDEA 11",
     date: "6 September 2024",
     content:
@@ -16,7 +16,7 @@ const newsAndEventData: NewsAndEvent[] = [
   },
   {
     id: 2,
-    type: "Product News 2",
+    type: "Product News",
     title: "Expand Your Audit Analytics Landscape: Introducing IDEA 11",
     date: "6 September 2024",
     content:
@@ -24,7 +24,7 @@ const newsAndEventData: NewsAndEvent[] = [
   },
   {
     id: 3,
-    type: "Product News 3",
+    type: "Product News",
     title: "Expand Your Audit Analytics Landscape: Introducing IDEA 11",
     date: "6 September 2024",
     content:
@@ -41,7 +41,7 @@ const NewsAndEvents = () => {
     },
   };
   return (
-    <section className="relative z-10 bg-white py-6 md:py-16">
+    <section className="relative z-10 bg-white py-6 md:py-10 lg:py-16">
       <div className="">
         <SectionTitle
           title="News / Product News / Events"
@@ -67,7 +67,7 @@ const NewsAndEvents = () => {
             ))}
           </MultiCarousel>
         ) : (
-          <div className="container mx-auto grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+          <div className="container mx-auto grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-3">
             {newsAndEventData.map((item) => (
               <NewsAndEventItem key={item.id} item={item} />
             ))}
