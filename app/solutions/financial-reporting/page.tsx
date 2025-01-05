@@ -21,7 +21,7 @@ const FinancialReportingPage = () => {
       break;
     case isTablet:
       bannerSrc =
-        "/images/solutions/financial-reporting/financial-reporting-banner.svg";
+        "/images/solutions/financial-reporting/financial-reporting-tablet-banner.svg";
       break;
     default:
       bannerSrc =

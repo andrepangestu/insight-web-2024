@@ -19,7 +19,8 @@ const InternalAuditPage = () => {
         "/images/solutions/internal-audit/internal-audit-mobile-banner.svg";
       break;
     case isTablet:
-      bannerSrc = "/images/solutions/internal-audit/internal-audit-banner.svg";
+      bannerSrc =
+        "/images/solutions/internal-audit/internal-audit-tablet-banner.svg";
       break;
     default:
       bannerSrc = "/images/solutions/internal-audit/internal-audit-banner.svg";

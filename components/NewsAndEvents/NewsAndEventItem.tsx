@@ -1,7 +1,14 @@
 import LearnMoreButton from "../Button/LearnMoreButton";
 import { NewsAndEvent } from "@/types/newsAndEvent";
+import "./styles.css";
 
-const NewsAndEventItem = ({ item }: { item: NewsAndEvent }) => {
+const NewsAndEventItem = ({
+  item,
+  withEllipsis,
+}: {
+  item: NewsAndEvent;
+  withEllipsis?: boolean;
+}) => {
   return (
     <div className="shadow-inner shadow-lg">
       <div
@@ -27,7 +34,11 @@ const NewsAndEventItem = ({ item }: { item: NewsAndEvent }) => {
         </div>
 
         <div className="mb-4">
-          <span className="text-sm font-medium text-primaryText">
+          <span
+            className={`text-sm font-medium text-primaryText ${
+              withEllipsis && "text-ellipsis"
+            }`}
+          >
             {item?.content}
           </span>
         </div>

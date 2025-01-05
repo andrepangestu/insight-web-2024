@@ -49,7 +49,10 @@ const Testimonials = () => {
           customRightArrow={<CustomButton direction="right" />}
         >
           {testimonyData.map((item) => (
-            <div className="container mx-auto w-full md:w-[800px]">
+            <div
+              key={item.id}
+              className="container mx-auto w-full md:w-[800px]"
+            >
               <div className="mb-4 text-center text-base italic text-primaryText md:text-lg">
                 {item.testimony}
               </div>

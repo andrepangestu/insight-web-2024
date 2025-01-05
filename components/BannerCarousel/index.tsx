@@ -11,8 +11,14 @@ import Link from "next/link";
 
 import "./styles.css";
 
+interface dataSrc {
+  desktop: string;
+  tablet: string;
+  mobile: string;
+}
+
 const BannerCarousel = () => {
-  const { isMobile, isTablet } = useDeviceType();
+  const { isMobile, isTablet, isDesktop } = useDeviceType();
 
   const responsive = {
     superLargeDesktop: {
@@ -31,6 +37,16 @@ const BannerCarousel = () => {
       breakpoint: { max: 464, min: 0 },
       items: 1,
     },
+  };
+
+  const getImageSrc = (dataItem: dataSrc): string => {
+    if (isMobile) {
+      return dataItem.mobile;
+    } else if (isTablet) {
+      return dataItem.tablet;
+    } else {
+      return dataItem.desktop;
+    }
   };
 
   return (
@@ -74,77 +90,54 @@ const BannerCarousel = () => {
         </div>
       )}
 
-      {isMobile ? (
-        <MultiCarousel
-          responsive={responsive}
-          ssr
-          infinite
-          showDots
-          containerClass="container-with-dots"
-          itemClass="image-item"
-          autoPlay
-          arrows={false}
-          swipeable
-          className="h-[261px] bg-[#F3F8FB]"
-          dotListClass="dot-carousel-style"
-        >
-          {dataBannerCarousel.map((item) => (
-            <div
-              key={item.id}
-              className=" w-full flex-row items-center justify-center p-4 text-center"
-            >
-              <div className="flex flex-col items-center justify-center">
-                <span className="block text-2xl font-semibold">
-                  {item.title}
-                </span>
-              </div>
-
-              <button className="bg-gradient-red mt-4 h-[33px] w-[120px] text-xs font-semibold text-white">
-                Learn more
-              </button>
-            </div>
-          ))}
-        </MultiCarousel>
-      ) : (
-        <MultiCarousel
-          responsive={responsive}
-          ssr
-          infinite
-          showDots
-          containerClass="container-with-dots"
-          itemClass="image-item"
-          autoPlay
-          arrows={false}
-          swipeable
-        >
-          {dataBannerCarousel.map((item) => (
-            <div key={item.id} className="relative h-[500px] w-full">
-              <Image src={item.src} alt={item.alt} fill objectFit="cover" />
-              <div className="absolute right-0 top-20 m-4 p-2">
-                <div className="flex w-[700px] flex-col lg:items-center lg:justify-center">
-                  <div className="md:text-right">
-                    <span
-                      className={`text-[30px] font-bold ${
-                        item.id === 3 ? "text-white" : "text-primaryText"
-                      }`}
-                    >
-                      {item.title}
-                    </span>
-                  </div>
-
-                  <Link href={item.link} className="md:text-right">
-                    <button
-                      className={`mt-8 h-[50px] w-[185px] font-semibold text-white ${item.buttonStyle}`}
-                    >
-                      Learn more
-                    </button>
-                  </Link>
+      <MultiCarousel
+        responsive={responsive}
+        ssr
+        infinite
+        showDots
+        containerClass="container-with-dots"
+        itemClass="image-item"
+        autoPlay
+        arrows={false}
+        swipeable
+      >
+        {dataBannerCarousel.map((item) => (
+          <div
+            key={item.id}
+            className="relative h-[321px] w-full md:h-[359px] lg:h-[500px]"
+          >
+            <Image
+              src={getImageSrc(item.src)}
+              alt={item.alt}
+              fill
+              objectFit="cover"
+            />
+            <div className="absolute left-1/2 top-10 m-4 -translate-x-1/2 transform p-2 md:left-auto md:right-0 md:top-20 md:transform-none">
+              <div className="flex w-[350px] flex-col items-center md:w-[700px] lg:items-center lg:justify-center">
+                <div className="text-center md:text-right">
+                  <span
+                    className={`text-[20px] font-semibold md:text-[30px] md:font-bold ${
+                      item.id === 3 ? "md:text-white" : "md:text-primaryText"
+                    }`}
+                  >
+                    {item.title}
+                  </span>
                 </div>
+
+                <Link href={item.link} className="text-center md:text-right">
+                  <button
+                    className={`mt-8 h-[50px] w-[185px] font-semibold text-white ${
+                      isDesktop ? item.buttonStyle : "bg-gradient-red"
+                    }`}
+                  >
+                    Learn more
+                  </button>
+                </Link>
               </div>
             </div>
-          ))}
-        </MultiCarousel>
-      )}
+          </div>
+        ))}
+      </MultiCarousel>
     </section>
   );
 };

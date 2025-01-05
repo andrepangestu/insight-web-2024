@@ -19,7 +19,8 @@ const ExternalAuditPage = () => {
         "/images/solutions/external-audit/external-audit-mobile-banner.svg";
       break;
     case isTablet:
-      bannerSrc = "/images/solutions/external-audit/external-audit-banner.svg";
+      bannerSrc =
+        "/images/solutions/external-audit/external-audit-tablet-banner.svg";
       break;
     default:
       bannerSrc = "/images/solutions/external-audit/external-audit-banner.svg";

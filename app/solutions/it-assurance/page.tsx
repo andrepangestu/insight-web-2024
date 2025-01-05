@@ -20,7 +20,8 @@ const ItAssurancePage = () => {
         "/images/solutions/it-assurance/it-assurance-mobile-banner.svg";
       break;
     case isTablet:
-      bannerSrc = "/images/solutions/it-assurance/it-assurance-banner.svg";
+      bannerSrc =
+        "/images/solutions/it-assurance/it-assurance-tablet-banner.svg";
       break;
     default:
       bannerSrc = "/images/solutions/it-assurance/it-assurance-banner.svg";

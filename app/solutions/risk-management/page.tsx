@@ -21,7 +21,7 @@ const RiskManagementPage = () => {
       break;
     case isTablet:
       bannerSrc =
-        "/images/solutions/risk-management/risk-management-banner.svg";
+        "/images/solutions/risk-management/risk-management-tablet-banner.svg";
       break;
     default:
       bannerSrc =

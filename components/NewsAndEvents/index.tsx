@@ -63,7 +63,7 @@ const NewsAndEvents = () => {
             transitionDuration={500}
           >
             {newsAndEventData.map((item) => (
-              <NewsAndEventItem key={item.id} item={item} />
+              <NewsAndEventItem key={item.id} item={item} withEllipsis />
             ))}
           </MultiCarousel>
         ) : (

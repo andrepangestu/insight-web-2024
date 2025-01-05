@@ -19,7 +19,7 @@ const ItAdvisoryPage = () => {
       bannerSrc = "/images/solutions/it-advisory/it-advisory-mobile-banner.svg";
       break;
     case isTablet:
-      bannerSrc = "/images/solutions/it-advisory/it-advisory-banner.svg";
+      bannerSrc = "/images/solutions/it-advisory/it-advisory-tablet-banner.svg";
       break;
     default:
       bannerSrc = "/images/solutions/it-advisory/it-advisory-banner.svg";

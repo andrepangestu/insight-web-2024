@@ -21,7 +21,7 @@ const IndependentReviewPage = () => {
       break;
     case isTablet:
       bannerSrc =
-        "/images/solutions/independent-review-for-brokerage/independent-review-banner.svg";
+        "/images/solutions/independent-review-for-brokerage/independent-review-tablet-banner.svg";
       break;
     default:
       bannerSrc =

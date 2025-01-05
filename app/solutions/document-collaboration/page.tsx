@@ -21,7 +21,7 @@ const DocumentCollaborationPage = () => {
       break;
     case isTablet:
       bannerSrc =
-        "/images/solutions/document-collaboration/document-collaboration-banner.svg";
+        "/images/solutions/document-collaboration/document-collaboration-tablet-banner.svg";
       break;
     default:
       bannerSrc =

@@ -20,7 +20,8 @@ const DataAnalyticsPage = () => {
         "/images/solutions/data-analytics/data-analytics-mobile-banner.svg";
       break;
     case isTablet:
-      bannerSrc = "/images/solutions/data-analytics/data-analytics-banner.svg";
+      bannerSrc =
+        "/images/solutions/data-analytics/data-analytics-tablet-banner.svg";
       break;
     default:
       bannerSrc = "/images/solutions/data-analytics/data-analytics-banner.svg";
