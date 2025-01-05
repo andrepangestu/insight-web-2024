@@ -1,20 +1,32 @@
+"use client";
+
 import Banner from "@/components/Banner";
 import ListSection from "@/components/Common/ListSection";
 import ScrollUp from "@/components/Common/ScrollUp";
 import ServiceListSection from "@/components/Common/ServiceListSection";
 import TitleTraining from "@/components/ContentSection/TitleTraining";
 import ContactUsTraining from "@/components/Section/ContactUsTraining";
+import useDeviceType from "@/hook/use-device-type";
 import Image from "next/image";
 import React from "react";
 
 const IdeaScriptCoursePage = () => {
+  const { isMobile, isTablet } = useDeviceType();
+  let bannerSrc;
+  switch (true) {
+    case isMobile:
+      bannerSrc = "/images/training/training-mobile-banner.svg";
+      break;
+    case isTablet:
+      bannerSrc = "/images/training/training-tablet-banner.svg";
+      break;
+    default:
+      bannerSrc = "/images/training/training-banner.svg";
+  }
   return (
     <>
       <ScrollUp />
-      <Banner
-        src="/images/training/script-for-analysis-banner.svg"
-        alt="Banner Idea Script Course"
-      />
+      <Banner src={bannerSrc} alt="Banner Idea Script Course" />
 
       <div className="mt-4 flex justify-center">
         <Image

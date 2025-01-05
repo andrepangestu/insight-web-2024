@@ -1,7 +1,10 @@
+"use client";
+
 import Banner from "@/components/Banner";
 import ScrollUp from "@/components/Common/ScrollUp";
 import SectionTitle from "@/components/Common/SectionTitle";
 import ContactUsTraining from "@/components/Section/ContactUsTraining";
+import useDeviceType from "@/hook/use-device-type";
 import {
   BooksIcon,
   FileExplorerIcon,
@@ -11,6 +14,19 @@ import {
 import React from "react";
 
 const TrainingOverviewPage = () => {
+  const { isMobile, isTablet } = useDeviceType();
+  let bannerSrc;
+  switch (true) {
+    case isMobile:
+      bannerSrc = "/images/training/training-mobile-banner.svg";
+      break;
+    case isTablet:
+      bannerSrc = "/images/training/training-tablet-banner.svg";
+      break;
+    default:
+      bannerSrc = "/images/training/training-banner.svg";
+  }
+
   const SectionDescription = ({
     title,
     description,
@@ -73,10 +89,7 @@ const TrainingOverviewPage = () => {
   return (
     <>
       <ScrollUp />
-      <Banner
-        src="/images/training/training-banner.svg"
-        alt="Banner Document Collaboration"
-      />
+      <Banner src={bannerSrc} alt="Banner Document Collaboration" />
 
       <SectionTitle
         center

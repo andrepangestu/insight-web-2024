@@ -1,20 +1,33 @@
+"use client";
+
 import Banner from "@/components/Banner";
 import ListSection from "@/components/Common/ListSection";
 import ScrollUp from "@/components/Common/ScrollUp";
 import ServiceListSection from "@/components/Common/ServiceListSection";
 import TitleTraining from "@/components/ContentSection/TitleTraining";
 import ContactUsTraining from "@/components/Section/ContactUsTraining";
+import useDeviceType from "@/hook/use-device-type";
 import Image from "next/image";
 import React from "react";
 
 const TrainingLevel2Page = () => {
+  const { isMobile, isTablet } = useDeviceType();
+  let bannerSrc;
+  switch (true) {
+    case isMobile:
+      bannerSrc = "/images/training/training-mobile-banner.svg";
+      break;
+    case isTablet:
+      bannerSrc = "/images/training/training-tablet-banner.svg";
+      break;
+    default:
+      bannerSrc = "/images/training/training-banner.svg";
+  }
+
   return (
     <>
       <ScrollUp />
-      <Banner
-        src="/images/solutions/document-collaboration/document-collaboration-banner.svg"
-        alt="Banner Document Collaboration"
-      />
+      <Banner src={bannerSrc} alt="Banner Document Collaboration" />
 
       <div className="mt-4 flex justify-center">
         <Image

@@ -22,6 +22,7 @@ const Banner: React.FC<BannerProps> = (props) => {
             width={0}
             height={320}
             layout="responsive"
+            // objectFit="cover"
           />
           {props.withRectangle && (
             <div className="absolute right-0 top-0 w-1/3">

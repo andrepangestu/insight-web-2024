@@ -2,18 +2,29 @@
 
 import Banner from "@/components/Banner";
 import ScrollUp from "@/components/Common/ScrollUp";
+import useDeviceType from "@/hook/use-device-type";
 import { ArrowLeftRedIcon, ArrowRightRedIcon } from "@/public/icons";
 import Link from "next/link";
 import React from "react";
 
 const NewsEventsDetailPage = () => {
+  const { isMobile, isTablet } = useDeviceType();
+  let bannerSrc;
+  switch (true) {
+    case isMobile:
+      bannerSrc = "/images/news-events/news-events-mobile-banner.svg";
+      break;
+    case isTablet:
+      bannerSrc = "/images/news-events/news-events-tablet-banner.svg";
+      break;
+    default:
+      bannerSrc = "/images/news-events/news-events-banner.svg";
+  }
+
   return (
     <>
       <ScrollUp />
-      <Banner
-        src="/images/news-events/news-events-banner.svg"
-        alt="Banner News & Events Detail"
-      />
+      <Banner src={bannerSrc} alt="Banner News & Events Detail" />
 
       <Link href={`/news-events`}>
         <div className="container flex cursor-pointer items-center">

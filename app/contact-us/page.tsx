@@ -5,8 +5,22 @@ import Banner from "@/components/Banner";
 import ScrollUp from "@/components/Common/ScrollUp";
 import InquiryForm from "@/components/InquiryForm";
 import { LetterBoxIcon } from "@/public/icons";
+import useDeviceType from "@/hook/use-device-type";
 
 const ContactUsPage = () => {
+  const { isMobile, isTablet } = useDeviceType();
+  let bannerSrc;
+  switch (true) {
+    case isMobile:
+      bannerSrc = "/images/contact-us/contact-us-mobile-banner.svg";
+      break;
+    case isTablet:
+      bannerSrc = "/images/contact-us/contact-us-tablet-banner.svg";
+      break;
+    default:
+      bannerSrc = "/images/contact-us/contact-us-banner.svg";
+  }
+
   const [data, setData] = useState(null);
 
   useEffect(() => {
@@ -19,10 +33,7 @@ const ContactUsPage = () => {
   return (
     <>
       <ScrollUp />
-      <Banner
-        src="/images/contact-us/contact-us-banner.svg"
-        alt="Banner Document Collaboration"
-      />
+      <Banner src={bannerSrc} alt="Banner Document Collaboration" />
 
       <div className="container text-center">
         <span className="mb-4 block text-[16px] font-semibold text-primaryText">

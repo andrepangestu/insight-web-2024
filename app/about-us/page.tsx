@@ -1,6 +1,9 @@
+"use client";
+
 import Banner from "@/components/Banner";
 import ScrollUp from "@/components/Common/ScrollUp";
 import ContactUsTraining from "@/components/Section/ContactUsTraining";
+import useDeviceType from "@/hook/use-device-type";
 import {
   HandshakeIcon,
   ImprovementIcon,
@@ -13,6 +16,19 @@ import Image from "next/image";
 import React from "react";
 
 const AboutUsPage = () => {
+  const { isMobile, isTablet } = useDeviceType();
+  let bannerSrc;
+  switch (true) {
+    case isMobile:
+      bannerSrc = "/images/about-us/about-us-mobile-banner.svg";
+      break;
+    case isTablet:
+      bannerSrc = "/images/about-us/about-us-tablet-banner.svg";
+      break;
+    default:
+      bannerSrc = "/images/about-us/about-us-banner.svg";
+  }
+
   const OurValueSection = ({
     title,
     icon,
@@ -27,13 +43,11 @@ const AboutUsPage = () => {
       </span>
     </div>
   );
+
   return (
     <>
       <ScrollUp />
-      <Banner
-        src="/images/about-us/about-us-banner.svg"
-        alt="Banner About Us"
-      />
+      <Banner src={bannerSrc} alt="Banner About Us" />
 
       <div className="container text-center">
         <div className="mb-8 text-base font-medium text-primaryText">

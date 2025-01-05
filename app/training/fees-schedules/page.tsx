@@ -1,18 +1,29 @@
+"use client";
+
+import React from "react";
 import Banner from "@/components/Banner";
 import ScrollUp from "@/components/Common/ScrollUp";
 import PricingCard from "@/components/PricingCard";
 import ContactUsTraining from "@/components/Section/ContactUsTraining";
-
-import React from "react";
+import useDeviceType from "@/hook/use-device-type";
 
 const FeesSchedulesPage = () => {
+  const { isMobile, isTablet } = useDeviceType();
+  let bannerSrc;
+  switch (true) {
+    case isMobile:
+      bannerSrc = "/images/training/training-mobile-banner.svg";
+      break;
+    case isTablet:
+      bannerSrc = "/images/training/training-tablet-banner.svg";
+      break;
+    default:
+      bannerSrc = "/images/training/training-banner.svg";
+  }
   return (
     <>
       <ScrollUp />
-      <Banner
-        src="/images/solutions/document-collaboration/document-collaboration-banner.svg"
-        alt="Banner Document Collaboration"
-      />
+      <Banner src={bannerSrc} alt="Banner Document Collaboration" />
 
       <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
         <div className="container">
