@@ -31,9 +31,10 @@ const NewsEventsPage = () => {
       </span>
 
       <div className="container">
-        {newsEventsListData.map((newsEvent, index) => (
+        {newsEventsListData.map((newsEvent) => (
           <NewsEventsItem
-            key={index}
+            key={newsEvent.id}
+            id={newsEvent.id}
             title={newsEvent.title}
             date={newsEvent.date}
             author={newsEvent.author}

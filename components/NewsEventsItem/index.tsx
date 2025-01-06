@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 
 interface NewsEventsItemProps {
+  id: number;
   title: string;
   date: string;
   author: string;
@@ -10,6 +11,7 @@ interface NewsEventsItemProps {
 }
 
 const NewsEventsItem: React.FC<NewsEventsItemProps> = ({
+  id,
   title,
   date,
   author,
@@ -19,7 +21,7 @@ const NewsEventsItem: React.FC<NewsEventsItemProps> = ({
   return (
     <>
       <hr className="my-8 w-full border-b border-lightSilver" />
-      <Link href={`/news-events/${slug}`}>
+      <Link href={`/news-events/${id}`}>
         <span className="mb-4 block text-[26px] font-semibold text-primaryTextBlue">
           {title}
         </span>

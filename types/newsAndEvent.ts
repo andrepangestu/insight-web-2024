@@ -4,4 +4,5 @@ export type NewsAndEvent = {
   title: string;
   date: string;
   content: string;
+  slug: string;
 };

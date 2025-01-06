@@ -1,5 +1,6 @@
 const newsEventsListData = [
   {
+    id: 1,
     title: "Expand Your Audit Analytics Landscape: Introducing IDEA 11",
     date: "16 December 2019",
     author: "Irfan Irawan",
@@ -8,6 +9,7 @@ const newsEventsListData = [
     slug: "expand-your-audit-analytics-landscape-introducing-idea-11",
   },
   {
+    id: 2,
     title: "Caseware Monitor became Alessa",
     date: "16 December 2019",
     author: "Irfan Irawan",
@@ -16,6 +18,7 @@ const newsEventsListData = [
     slug: "caseware-monitor-became-alessa",
   },
   {
+    id: 3,
     title: "Ideagen acquaires Morgan Kai Group Ltd.",
     date: "16 December 2019",
     author: "Irfan Irawan",
@@ -24,6 +27,7 @@ const newsEventsListData = [
     slug: "ideagen-acquires-morgan-kai-group-ltd",
   },
   {
+    id: 4,
     title:
       "Experience the IDEA 10.4 Launch and See How 10.4 Will Boost the Performance of Your Audit Team",
     date: "16 December 2019",

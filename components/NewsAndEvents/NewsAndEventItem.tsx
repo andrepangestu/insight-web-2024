@@ -10,7 +10,7 @@ const NewsAndEventItem = ({
   withEllipsis?: boolean;
 }) => {
   return (
-    <div className="shadow-inner shadow-lg">
+    <div className="h-[500px] shadow-inner shadow-lg md:h-[400px]">
       <div
         className="wow fadeInUp rounded-md bg-white p-8 lg:px-5 xl:px-8"
         data-wow-delay=".1s"
@@ -43,7 +43,7 @@ const NewsAndEventItem = ({
           </span>
         </div>
 
-        <LearnMoreButton />
+        <LearnMoreButton link={`news-events/${item?.id}`} />
       </div>
     </div>
   );
