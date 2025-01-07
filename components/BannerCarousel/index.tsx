@@ -97,6 +97,60 @@ const BannerCarousel = () => {
         showDots
         containerClass="container-with-dots"
         itemClass="image-item"
+        // autoPlay
+        arrows={false}
+        swipeable
+      >
+        {dataBannerCarousel.map((item) => (
+          <div
+            key={item.id}
+            className="relative h-[321px] w-full md:h-[400px] lg:h-[500px]"
+          >
+            <Image
+              src={getImageSrc(item.src)}
+              alt={item.alt}
+              fill
+              objectFit="cover"
+            />
+            <div className="absolute bottom-0 w-full">
+              <div className="grid grid-cols-1 md:grid-cols-2">
+                <div className="col-span-1"></div>
+                <div className="col-span-1 mx-auto mb-[100px] w-10/12 text-center md:mb-[130px] md:w-11/12 lg:mb-[150px] lg:w-11/12">
+                  <div className="mb-4 text-center md:text-left">
+                    <span
+                      className={`text-[20px] font-semibold md:text-[24px] md:font-bold lg:text-[30px] ${
+                        item.id === 3 ? "text-white" : "text-primaryText"
+                      }`}
+                    >
+                      {item.title}
+                    </span>
+                  </div>
+                  <Link
+                    href={item.link}
+                    className="flex justify-center md:justify-start"
+                  >
+                    <button
+                      className={`h-[40px] w-[150px] font-semibold text-white ${
+                        isDesktop ? item.buttonStyle : "bg-gradient-red"
+                      }`}
+                    >
+                      Learn more
+                    </button>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </MultiCarousel>
+
+      {/* <MultiCarousel
+        responsive={responsive}
+        ssr
+        infinite
+        showDots
+        containerClass="container-with-dots"
+        itemClass="image-item"
         autoPlay
         arrows={false}
         swipeable
@@ -137,7 +191,7 @@ const BannerCarousel = () => {
             </div>
           </div>
         ))}
-      </MultiCarousel>
+      </MultiCarousel> */}
     </section>
   );
 };

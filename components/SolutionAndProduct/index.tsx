@@ -55,7 +55,7 @@ const SolutionAndProduct = () => {
             Fax : 021-250 6697
           </div>
           <div className="mb-1 text-xs font-normal text-primaryTextBody">
-            Senin - Jumat : 09.00 - 17.00
+            Monday - Friday : 09.00 - 17.00
           </div>
         </div>
       </div>
