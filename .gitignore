@@ -5,3 +5,4 @@ node_modules
 .tsserver
 
 .DS_Store
+out/

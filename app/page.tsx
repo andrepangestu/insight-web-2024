@@ -4,11 +4,11 @@ import BannerCarousel from "@/components/BannerCarousel";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Features from "@/components/Features";
 import ProductOverview from "@/components/ProductOverview";
-import { Inter } from "@next/font/google";
+// import { Inter } from "@next/font/google";
 import NewsAndEvents from "@/components/NewsAndEvents";
 import Testimonials from "@/components/Testimonials";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
