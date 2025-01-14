@@ -180,7 +180,7 @@ const menuData: Menu[] = [
         newTab: false,
       },
       {
-        id: 45,
+        id: 46,
         title: "Fees & Schedules",
         path: "/training/fees-schedules",
         newTab: false,
@@ -200,7 +200,7 @@ const menuData: Menu[] = [
     newTab: false,
   },
   {
-    id: 5,
+    id: 7,
     title: "Contact Us",
     path: "/contact-us",
     newTab: false,
