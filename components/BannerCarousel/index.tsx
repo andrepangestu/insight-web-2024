@@ -1,8 +1,6 @@
-"use client";
-
-import { ArrowBarRightIcon } from "@/public/icons";
-import Image from "next/image";
 import React from "react";
+import { ArrowBarRightIcon } from "@/public/icons";
+
 import MultiCarousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { dataBannerCarousel } from "./data";
@@ -106,12 +104,10 @@ const BannerCarousel = () => {
             key={item.id}
             className="relative h-[321px] w-full md:h-[400px] lg:h-[500px]"
           >
-            <Image
+            <img
               src={getImageSrc(item.src)}
               alt={item.alt}
               className="h-full w-full object-cover"
-              fill
-              objectFit="cover"
             />
             <div className="absolute bottom-0 w-full">
               <div className="grid grid-cols-1 md:grid-cols-2">
@@ -144,55 +140,6 @@ const BannerCarousel = () => {
           </div>
         ))}
       </MultiCarousel>
-
-      {/* <MultiCarousel
-        responsive={responsive}
-        ssr
-        infinite
-        showDots
-        containerClass="container-with-dots"
-        itemClass="image-item"
-        autoPlay
-        arrows={false}
-        swipeable
-      >
-        {dataBannerCarousel.map((item) => (
-          <div
-            key={item.id}
-            className="relative h-[321px] w-full md:h-[359px] lg:h-[500px]"
-          >
-            <Image
-              src={getImageSrc(item.src)}
-              alt={item.alt}
-              fill
-              objectFit="cover"
-            />
-            <div className="absolute left-1/2 top-10 m-4 -translate-x-1/2 transform p-2 md:left-auto md:right-0 md:top-20 md:transform-none">
-              <div className="flex w-[350px] flex-col items-center md:w-[700px] lg:items-center lg:justify-center">
-                <div className="text-center md:text-right">
-                  <span
-                    className={`text-[20px] font-semibold md:text-[30px] md:font-bold ${
-                      item.id === 3 ? "md:text-white" : "md:text-primaryText"
-                    }`}
-                  >
-                    {item.title}
-                  </span>
-                </div>
-
-                <Link href={item.link} className="text-center md:text-right">
-                  <button
-                    className={`mt-8 h-[50px] w-[185px] font-semibold text-white ${
-                      isDesktop ? item.buttonStyle : "bg-gradient-red"
-                    }`}
-                  >
-                    Learn more
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        ))}
-      </MultiCarousel> */}
     </section>
   );
 };

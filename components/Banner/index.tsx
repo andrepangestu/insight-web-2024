@@ -16,13 +16,18 @@ const Banner: React.FC<BannerProps> = (props) => {
         className="relative z-10 mb-8 w-full overflow-hidden pt-[90px] md:pt-[120px]"
       >
         <div className="max-w-screen relative w-full">
-          <Image
+          {/* <Image
             src={props.src}
             alt={props.alt}
             width={0}
             height={320}
             layout="responsive"
             // objectFit="cover"
+          /> */}
+          <img
+            src={props.src}
+            alt={props.alt}
+            className="w-full object-cover"
           />
           {props.withRectangle && (
             <div className="absolute right-0 top-0 w-1/3">

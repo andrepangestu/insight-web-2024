@@ -1,7 +1,10 @@
-import Image from "next/image";
+import useDeviceType from "@/hook/use-device-type";
+import { CompanyLogoFooter, CompanyLogoFooterMobile } from "@/public/images";
 import React from "react";
 
 const Copyright = () => {
+  const { isMobile } = useDeviceType();
+
   return (
     <section className="container py-8 md:py-10">
       <div className="flex items-center justify-between">
@@ -14,12 +17,7 @@ const Copyright = () => {
           </span>
         </div>
         <div>
-          <Image
-            src="/images/logo/logo.svg"
-            alt="logo"
-            width={160}
-            height={50}
-          />
+          {isMobile ? <CompanyLogoFooterMobile /> : <CompanyLogoFooter />}
         </div>
       </div>
     </section>

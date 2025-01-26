@@ -1,12 +1,10 @@
-"use client";
-
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import menuData from "./menuData";
 import { SortUpIcon } from "@/public/icons";
 import useDeviceType from "@/hook/use-device-type";
 import { usePathname } from "next/navigation";
+import { CompanyLogo, CompanyLogoMobile } from "@/public/images";
 
 const Header = () => {
   // Navbar toggle
@@ -61,20 +59,7 @@ const Header = () => {
                   sticky ? "py-5 lg:py-2" : "py-8"
                 } `}
               >
-                <Image
-                  src="/images/logo/logo.svg"
-                  alt="logo"
-                  width={isMobile ? 160 : 140}
-                  height={isMobile ? 47 : 30}
-                  className="w-full"
-                />
-                <Image
-                  src="/images/logo/logo.svg"
-                  alt="logo"
-                  width={isMobile ? 160 : 140}
-                  height={isMobile ? 47 : 30}
-                  className="hidden w-full"
-                />
+                {isMobile ? <CompanyLogoMobile /> : <CompanyLogo />}
               </Link>
             </div>
 

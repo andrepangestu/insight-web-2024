@@ -7,14 +7,18 @@ import TrainingStep1Img from "@/images/training/training-step-1.svg";
 import BannerCarouselDesktop1 from "@/images/banner-carousel/banner-carousel-1.svg";
 import BannerCarouselTablet1 from "@/images/banner-carousel/banner-carousel-1-tablet.svg";
 import BannerCarouselMobile1 from "@/images/banner-carousel/banner-carousel-1-mobile.svg";
-
 import BannerCarouselDesktop2 from "@/images/banner-carousel/banner-carousel-2.svg";
 import BannerCarouselTablet2 from "@/images/banner-carousel/banner-carousel-2-tablet.svg";
 import BannerCarouselMobile2 from "@/images/banner-carousel/banner-carousel-2-mobile.svg";
-
 import BannerCarouselDesktop3 from "@/images/banner-carousel/banner-carousel-3.svg";
 import BannerCarouselTablet3 from "@/images/banner-carousel/banner-carousel-3-tablet.svg";
 import BannerCarouselMobile3 from "@/images/banner-carousel/banner-carousel-3-mobile.svg";
+
+// COMPANY LOGO
+import CompanyLogo from "@/images/logo/logo.svg";
+import CompanyLogoMobile from "@/images/logo/logo-mobile.svg";
+import CompanyLogoFooter from "@/images/logo/logo-footer.svg";
+import CompanyLogoFooterMobile from "@/images/logo/logo-footer-mobile.svg";
 
 export {
   CasewareLogo,
@@ -30,4 +34,8 @@ export {
   BannerCarouselDesktop3,
   BannerCarouselTablet3,
   BannerCarouselMobile3,
+  CompanyLogo,
+  CompanyLogoMobile,
+  CompanyLogoFooter,
+  CompanyLogoFooterMobile,
 };
