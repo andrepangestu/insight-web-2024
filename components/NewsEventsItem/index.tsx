@@ -7,7 +7,6 @@ interface NewsEventsItemProps {
   date: string;
   author: string;
   content: string;
-  slug: string;
 }
 
 const NewsEventsItem: React.FC<NewsEventsItemProps> = ({
@@ -16,7 +15,6 @@ const NewsEventsItem: React.FC<NewsEventsItemProps> = ({
   date,
   author,
   content,
-  slug,
 }) => {
   return (
     <>

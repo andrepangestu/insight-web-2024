@@ -97,7 +97,7 @@ const BannerCarousel = () => {
         showDots
         containerClass="container-with-dots"
         itemClass="image-item"
-        // autoPlay
+        autoPlay
         arrows={false}
         swipeable
       >
@@ -109,6 +109,7 @@ const BannerCarousel = () => {
             <Image
               src={getImageSrc(item.src)}
               alt={item.alt}
+              className="h-full w-full object-cover"
               fill
               objectFit="cover"
             />

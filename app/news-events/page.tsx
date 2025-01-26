@@ -39,7 +39,6 @@ const NewsEventsPage = () => {
             date={newsEvent.date}
             author={newsEvent.author}
             content={newsEvent.content}
-            slug={newsEvent.slug}
           />
         ))}
       </div>
