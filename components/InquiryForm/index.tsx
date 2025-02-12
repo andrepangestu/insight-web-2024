@@ -17,7 +17,7 @@ export type FormData = {
 };
 
 const InquiryForm = () => {
-  const { register, handleSubmit, control, formState } = useForm<FormData>();
+  const { register, handleSubmit, formState } = useForm<FormData>();
   const [loading, setLoading] = useState(false);
 
   async function onSubmit(data: FormData) {

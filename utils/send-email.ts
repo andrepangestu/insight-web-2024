@@ -2,7 +2,7 @@ import { FormData } from "@/components/InquiryForm";
 import { Bounce, toast } from "react-toastify";
 
 export function sendEmail(data: FormData) {
-  const apiEndpoint = "/api/email";
+  const apiEndpoint = "/api/email/";
 
   return fetch(apiEndpoint, {
     method: "POST",
