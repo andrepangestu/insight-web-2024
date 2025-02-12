@@ -3,7 +3,6 @@
 import Banner from "@/components/Banner";
 import ScrollUp from "@/components/Common/ScrollUp";
 import InquiryForm from "@/components/InquiryForm";
-import Contact from "@/components/InquiryForm/Contact";
 import useDeviceType from "@/hook/use-device-type";
 import React from "react";
 

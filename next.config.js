@@ -16,6 +16,7 @@ const nextConfig = {
   // For Build
   // assetPrefix: "http://localhost/insight-new-assets",
   // basePath: "/insight-new",
+
   // assetPrefix: "https://assets.insight.co.id",
   // basePath: "/insight-new",
 
