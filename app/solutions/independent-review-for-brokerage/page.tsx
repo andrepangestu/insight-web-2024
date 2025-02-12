@@ -17,15 +17,15 @@ const IndependentReviewPage = () => {
   switch (true) {
     case isMobile:
       bannerSrc =
-        "/images/solutions/independent-review-for-brokerage/independent-review-mobile-banner.svg";
+        "https://assets.insight.co.id/images/solutions/independent-review-for-brokerage/independent-review-mobile-banner.svg";
       break;
     case isTablet:
       bannerSrc =
-        "/images/solutions/independent-review-for-brokerage/independent-review-tablet-banner.svg";
+        "https://assets.insight.co.id/images/solutions/independent-review-for-brokerage/independent-review-tablet-banner.svg";
       break;
     default:
       bannerSrc =
-        "/images/solutions/independent-review-for-brokerage/independent-review-banner.svg";
+        "https://assets.insight.co.id/images/solutions/independent-review-for-brokerage/independent-review-banner.svg";
   }
   return (
     <>

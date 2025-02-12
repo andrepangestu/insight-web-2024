@@ -1,7 +1,8 @@
 export const internalAuditData = [
   {
     id: 1,
-    imageSrc: "/images/solutions/internal-audit/internal-audit-1.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/solutions/internal-audit/internal-audit-1.svg",
     imageAlt: "internal-audit-1",
     title: "Integrated Audit Process",
     content:
@@ -9,7 +10,8 @@ export const internalAuditData = [
   },
   {
     id: 2,
-    imageSrc: "/images/solutions/internal-audit/internal-audit-2.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/solutions/internal-audit/internal-audit-2.svg",
     imageAlt: "internal-audit-2",
     title: "Robotic Process Automation (RPA)",
     content:
@@ -18,7 +20,8 @@ export const internalAuditData = [
   },
   {
     id: 3,
-    imageSrc: "/images/solutions/internal-audit/internal-audit-3.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/solutions/internal-audit/internal-audit-3.svg",
     imageAlt: "internal-audit-3",
     title: "Internal Audit Advisory",
     content:

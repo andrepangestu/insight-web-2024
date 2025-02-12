@@ -17,15 +17,15 @@ const FinancialReportingPage = () => {
   switch (true) {
     case isMobile:
       bannerSrc =
-        "/images/solutions/financial-reporting/financial-reporting-mobile-banner.svg";
+        "https://assets.insight.co.id/images/solutions/financial-reporting/financial-reporting-mobile-banner.svg";
       break;
     case isTablet:
       bannerSrc =
-        "/images/solutions/financial-reporting/financial-reporting-tablet-banner.svg";
+        "https://assets.insight.co.id/images/solutions/financial-reporting/financial-reporting-tablet-banner.svg";
       break;
     default:
       bannerSrc =
-        "/images/solutions/financial-reporting/financial-reporting-banner.svg";
+        "https://assets.insight.co.id/images/solutions/financial-reporting/financial-reporting-banner.svg";
   }
   return (
     <>

@@ -97,6 +97,8 @@ const Header = () => {
                 >
                   <ul className="block lg:flex lg:items-center lg:space-x-12">
                     {menuData.map((menuItem, index) => {
+                      const splitMenuItemPath = menuItem?.path.split("/");
+
                       return (
                         <li key={menuItem.id} className="group relative">
                           {menuItem.submenu ? (
@@ -125,7 +127,7 @@ const Header = () => {
                                       href={submenuItem.path}
                                       key={submenuItem.id}
                                       className={`block rounded py-2.5 text-sm text-dark hover:opacity-70 lg:px-3  ${
-                                        pathname === submenuItem.path
+                                        pathname === `${submenuItem.path}/`
                                           ? "text-primaryRed"
                                           : "text-primaryText"
                                       }`}
@@ -142,7 +144,7 @@ const Header = () => {
                               onClick={() => setNavbarOpen(false)}
                               href={menuItem.path}
                               className={`flex py-2 text-base font-semibold  group-hover:opacity-70 lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-                                pathname === menuItem.path
+                                splitPathname[1] === splitMenuItemPath[1]
                                   ? "text-primaryRed"
                                   : "text-spaceCadet"
                               }`}

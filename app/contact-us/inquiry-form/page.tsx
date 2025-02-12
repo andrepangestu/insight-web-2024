@@ -12,13 +12,16 @@ const InquiryFormPage = () => {
   let bannerSrc;
   switch (true) {
     case isMobile:
-      bannerSrc = "/images/contact-us/contact-us-mobile-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/contact-us/contact-us-mobile-banner.svg";
       break;
     case isTablet:
-      bannerSrc = "/images/contact-us/contact-us-tablet-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/contact-us/contact-us-tablet-banner.svg";
       break;
     default:
-      bannerSrc = "/images/contact-us/contact-us-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/contact-us/contact-us-banner.svg";
   }
 
   return (

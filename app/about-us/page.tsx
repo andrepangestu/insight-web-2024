@@ -20,13 +20,16 @@ const AboutUsPage = () => {
   let bannerSrc;
   switch (true) {
     case isMobile:
-      bannerSrc = "/images/about-us/about-us-mobile-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/about-us/about-us-mobile-banner.svg";
       break;
     case isTablet:
-      bannerSrc = "/images/about-us/about-us-tablet-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/about-us/about-us-tablet-banner.svg";
       break;
     default:
-      bannerSrc = "/images/about-us/about-us-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/about-us/about-us-banner.svg";
   }
 
   const OurValueSection = ({
@@ -141,7 +144,7 @@ const AboutUsPage = () => {
 
         <div className="flex justify-center">
           <Image
-            src="/images/about-us/placeholder-rounded.svg"
+            src="https://assets.insight.co.id/images/about-us/placeholder-rounded.svg"
             alt="About Us People"
             width={100}
             height={100}

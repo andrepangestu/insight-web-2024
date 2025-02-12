@@ -17,15 +17,15 @@ const DocumentCollaborationPage = () => {
   switch (true) {
     case isMobile:
       bannerSrc =
-        "/images/solutions/document-collaboration/document-collaboration-mobile-banner.svg";
+        "https://assets.insight.co.id/images/solutions/document-collaboration/document-collaboration-mobile-banner.svg";
       break;
     case isTablet:
       bannerSrc =
-        "/images/solutions/document-collaboration/document-collaboration-tablet-banner.svg";
+        "https://assets.insight.co.id/images/solutions/document-collaboration/document-collaboration-tablet-banner.svg";
       break;
     default:
       bannerSrc =
-        "/images/solutions/document-collaboration/document-collaboration-banner.svg";
+        "https://assets.insight.co.id/images/solutions/document-collaboration/document-collaboration-banner.svg";
   }
 
   return (

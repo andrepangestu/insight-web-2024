@@ -15,13 +15,16 @@ const TrainingLevel2Page = () => {
   let bannerSrc;
   switch (true) {
     case isMobile:
-      bannerSrc = "/images/training/training-mobile-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/training/training-mobile-banner.svg";
       break;
     case isTablet:
-      bannerSrc = "/images/training/training-tablet-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/training/training-tablet-banner.svg";
       break;
     default:
-      bannerSrc = "/images/training/training-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/training/training-banner.svg";
   }
 
   return (
@@ -31,7 +34,7 @@ const TrainingLevel2Page = () => {
 
       <div className="mt-4 flex justify-center">
         <Image
-          src="/images/training/training-step-2.svg"
+          src="https://assets.insight.co.id/images/training/training-step-2.svg"
           alt="Training Step 2"
           width={684}
           height={134}

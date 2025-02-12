@@ -16,13 +16,16 @@ const DrpbcpPage = () => {
   let bannerSrc;
   switch (true) {
     case isMobile:
-      bannerSrc = "/images/solutions/it-bcp-drp/drp-bcp-mobile-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/solutions/it-bcp-drp/drp-bcp-mobile-banner.svg";
       break;
     case isTablet:
-      bannerSrc = "/images/solutions/it-bcp-drp/drp-bcp-tablet-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/solutions/it-bcp-drp/drp-bcp-tablet-banner.svg";
       break;
     default:
-      bannerSrc = "/images/solutions/it-bcp-drp/drp-bcp-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/solutions/it-bcp-drp/drp-bcp-banner.svg";
   }
 
   return (

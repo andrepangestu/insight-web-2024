@@ -12,23 +12,17 @@ const ContactUsPage = () => {
   let bannerSrc;
   switch (true) {
     case isMobile:
-      bannerSrc = "/images/contact-us/contact-us-mobile-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/contact-us/contact-us-mobile-banner.svg";
       break;
     case isTablet:
-      bannerSrc = "/images/contact-us/contact-us-tablet-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/contact-us/contact-us-tablet-banner.svg";
       break;
     default:
-      bannerSrc = "/images/contact-us/contact-us-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/contact-us/contact-us-banner.svg";
   }
-
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    fetch("/api/placeholder")
-      .then((response) => response.json())
-      .then((data) => setData(data))
-      .catch((error) => console.error("Error fetching data:", error));
-  }, []);
 
   return (
     <>

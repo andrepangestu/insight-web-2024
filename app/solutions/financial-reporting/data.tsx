@@ -1,7 +1,8 @@
 export const financialReportingData = [
   {
     id: 1,
-    imageSrc: "/images/solutions/financial-reporting/financial-reporting-1.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/solutions/financial-reporting/financial-reporting-1.svg",
     imageAlt: "financial-reporting-1",
     title: "Generate High-Quality Financial Reports Quickly",
     content:
@@ -9,7 +10,8 @@ export const financialReportingData = [
   },
   {
     id: 2,
-    imageSrc: "/images/solutions/financial-reporting/financial-reporting-2.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/solutions/financial-reporting/financial-reporting-2.svg",
     imageAlt: "financial-reporting-2",
     title: "Simplify Client Communication",
     content:
@@ -18,7 +20,8 @@ export const financialReportingData = [
   },
   {
     id: 3,
-    imageSrc: "/images/solutions/financial-reporting/financial-reporting-3.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/solutions/financial-reporting/financial-reporting-3.svg",
     imageAlt: "financial-reporting-3",
     title: "Use Data to Lower Risk",
     content:
@@ -26,7 +29,8 @@ export const financialReportingData = [
   },
   {
     id: 4,
-    imageSrc: "/images/solutions/financial-reporting/financial-reporting-4.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/solutions/financial-reporting/financial-reporting-4.svg",
     imageAlt: "financial-reporting-4",
     title: "Collaborate Easily with Your Team",
     content:
@@ -35,7 +39,8 @@ export const financialReportingData = [
   },
   {
     id: 5,
-    imageSrc: "/images/solutions/financial-reporting/financial-reporting-5.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/solutions/financial-reporting/financial-reporting-5.svg",
     imageAlt: "financial-reporting-5",
     title: "Customize Reporting to Fit Your Needs",
     content:

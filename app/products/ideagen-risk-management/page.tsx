@@ -19,15 +19,15 @@ const IdeagenRiskManagementPage = () => {
   switch (true) {
     case isMobile:
       bannerSrc =
-        "/images/products/ideagen-risk-management/ideagen-risk-management-mobile-banner.svg";
+        "https://assets.insight.co.id/images/products/ideagen-risk-management/ideagen-risk-management-mobile-banner.svg";
       break;
     case isTablet:
       bannerSrc =
-        "/images/products/ideagen-risk-management/ideagen-risk-management-tablet-banner.svg";
+        "https://assets.insight.co.id/images/products/ideagen-risk-management/ideagen-risk-management-tablet-banner.svg";
       break;
     default:
       bannerSrc =
-        "/images/products/ideagen-risk-management/ideagen-risk-management-banner.svg";
+        "https://assets.insight.co.id/images/products/ideagen-risk-management/ideagen-risk-management-banner.svg";
   }
 
   return (
@@ -36,7 +36,7 @@ const IdeagenRiskManagementPage = () => {
       <Banner
         src={bannerSrc}
         alt="Banner Ideagen Risk Management"
-        logoSrc="/images/products/ideagen-risk-management/ideagen-risk-management-logo.svg"
+        logoSrc="https://assets.insight.co.id/images/products/ideagen-risk-management/ideagen-risk-management-logo.svg"
         withRectangle={isDesktop}
       />
 

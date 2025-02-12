@@ -16,14 +16,15 @@ const casewareIdeaPage = () => {
   switch (true) {
     case isMobile:
       bannerSrc =
-        "/images/products/caseware-idea/caseware-idea-mobile-banner.svg";
+        "https://assets.insight.co.id/images/products/caseware-idea/caseware-idea-mobile-banner.svg";
       break;
     case isTablet:
       bannerSrc =
-        "/images/products/caseware-idea/caseware-idea-tablet-banner.svg";
+        "https://assets.insight.co.id/images/products/caseware-idea/caseware-idea-tablet-banner.svg";
       break;
     default:
-      bannerSrc = "/images/products/caseware-idea/caseware-idea-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/products/caseware-idea/caseware-idea-banner.svg";
   }
 
   return (
@@ -32,7 +33,7 @@ const casewareIdeaPage = () => {
       <Banner
         src={bannerSrc}
         alt="Banner Caseware IDEA"
-        logoSrc="/images/products/caseware-idea/caseware-logo.svg"
+        logoSrc="https://assets.insight.co.id/images/products/caseware-idea/caseware-logo.svg"
         withRectangle={isDesktop}
       />
 

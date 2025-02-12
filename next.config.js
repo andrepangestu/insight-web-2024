@@ -15,10 +15,25 @@ const nextConfig = {
 
   // For Build
   // assetPrefix: "http://localhost/insight-new-assets",
+  // basePath: "/insight-new",
+  // assetPrefix: "https://assets.insight.co.id",
+  // basePath: "/insight-new",
+
   // images: {
   //   domains: ["localhost"], // Allow images from localhost
   //   loader: "default",
   //   path: "http://localhost/insight-new-assets",
+  // },
+  // images: {
+  //   remotePatterns: [
+  //     {
+  //       protocol: "http",
+  //       hostname: "localhost",
+  //       port: "",
+  //       pathname: "/insight-new-assets/**",
+  //       search: "",
+  //     },
+  //   ],
   // },
 };
 

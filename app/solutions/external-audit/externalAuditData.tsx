@@ -1,7 +1,8 @@
 export const externalAuditData = [
   {
     id: 1,
-    imageSrc: "/images/solutions/external-audit/external-audit-1.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/solutions/external-audit/external-audit-1.svg",
     imageAlt: "external-audit-1",
     title: "Elevate the Quality of Your Audits",
     content:
@@ -9,7 +10,8 @@ export const externalAuditData = [
   },
   {
     id: 2,
-    imageSrc: "/images/solutions/external-audit/external-audit-2.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/solutions/external-audit/external-audit-2.svg",
     imageAlt: "external-audit-2",
     title: "Maximize Efficiency and Reduce Costs",
     content:
@@ -18,7 +20,8 @@ export const externalAuditData = [
   },
   {
     id: 3,
-    imageSrc: "/images/solutions/external-audit/external-audit-3.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/solutions/external-audit/external-audit-3.svg",
     imageAlt: "external-audit-3",
     title: "Streamline Compliance Management",
     content:
@@ -26,7 +29,8 @@ export const externalAuditData = [
   },
   {
     id: 4,
-    imageSrc: "/images/solutions/external-audit/external-audit-4.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/solutions/external-audit/external-audit-4.svg",
     imageAlt: "external-audit-4",
     title: "Expand Your Service Offerings",
     content:
@@ -35,7 +39,8 @@ export const externalAuditData = [
   },
   {
     id: 5,
-    imageSrc: "/images/solutions/external-audit/external-audit-5.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/solutions/external-audit/external-audit-5.svg",
     imageAlt: "external-audit-5",
     title: "Create a Transparent Audit Trail",
     content:

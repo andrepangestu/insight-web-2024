@@ -12,13 +12,16 @@ const NewsEventsPage = () => {
   let bannerSrc;
   switch (true) {
     case isMobile:
-      bannerSrc = "/images/news-events/news-events-mobile-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/news-events/news-events-mobile-banner.svg";
       break;
     case isTablet:
-      bannerSrc = "/images/news-events/news-events-tablet-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/news-events/news-events-tablet-banner.svg";
       break;
     default:
-      bannerSrc = "/images/news-events/news-events-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/news-events/news-events-banner.svg";
   }
 
   return (

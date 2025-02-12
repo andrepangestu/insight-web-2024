@@ -49,7 +49,7 @@ const SolutionAndProduct = () => {
             Email : info@insight.co.id,
           </div>
           <div className="mb-1 text-xs font-normal text-primaryTextBody">
-            Telp : 021-2506696 atau
+            Telp : 021-2506696
           </div>
           <div className="mb-1 text-xs font-normal text-primaryTextBody">
             Fax : 021-250 6697

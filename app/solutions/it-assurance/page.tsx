@@ -17,14 +17,15 @@ const ItAssurancePage = () => {
   switch (true) {
     case isMobile:
       bannerSrc =
-        "/images/solutions/it-assurance/it-assurance-mobile-banner.svg";
+        "https://assets.insight.co.id/images/solutions/it-assurance/it-assurance-mobile-banner.svg";
       break;
     case isTablet:
       bannerSrc =
-        "/images/solutions/it-assurance/it-assurance-tablet-banner.svg";
+        "https://assets.insight.co.id/images/solutions/it-assurance/it-assurance-tablet-banner.svg";
       break;
     default:
-      bannerSrc = "/images/solutions/it-assurance/it-assurance-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/solutions/it-assurance/it-assurance-banner.svg";
   }
   return (
     <>

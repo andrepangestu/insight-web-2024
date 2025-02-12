@@ -10,7 +10,7 @@ const Copyright = () => {
       <div className="flex items-center justify-between">
         <div className="w-11/12">
           <span className="mr-1 text-sm font-normal text-primaryText">
-            Copyright 2024 © All Rights Reserved by
+            Copyright 2025 © All Rights Reserved by
           </span>
           <span className="text-sm font-semibold text-primaryText">
             Insight Consulting

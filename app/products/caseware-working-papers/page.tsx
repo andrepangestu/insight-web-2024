@@ -19,15 +19,15 @@ const casewareWorkingPapersPage = () => {
   switch (true) {
     case isMobile:
       bannerSrc =
-        "/images/products/caseware-working-papers/caseware-working-papers-mobile-banner.svg";
+        "https://assets.insight.co.id/images/products/caseware-working-papers/caseware-working-papers-mobile-banner.svg";
       break;
     case isTablet:
       bannerSrc =
-        "/images/products/caseware-working-papers/caseware-working-papers-tablet-banner.svg";
+        "https://assets.insight.co.id/images/products/caseware-working-papers/caseware-working-papers-tablet-banner.svg";
       break;
     default:
       bannerSrc =
-        "/images/products/caseware-working-papers/caseware-working-papers-banner.svg";
+        "https://assets.insight.co.id/images/products/caseware-working-papers/caseware-working-papers-banner.svg";
   }
 
   return (
@@ -36,7 +36,7 @@ const casewareWorkingPapersPage = () => {
       <Banner
         src={bannerSrc}
         alt="Banner Caseware Working Papers"
-        logoSrc="/images/products/caseware-logo.svg"
+        logoSrc="https://assets.insight.co.id/images/products/caseware-logo.svg"
         withRectangle={isDesktop}
       />
 

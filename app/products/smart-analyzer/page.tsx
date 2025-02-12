@@ -15,14 +15,15 @@ const casewareSmartAnalyzerPage = () => {
   switch (true) {
     case isMobile:
       bannerSrc =
-        "/images/products/smart-analyzer/smart-analyzer-mobile-banner.svg";
+        "https://assets.insight.co.id/images/products/smart-analyzer/smart-analyzer-mobile-banner.svg";
       break;
     case isTablet:
       bannerSrc =
-        "/images/products/smart-analyzer/smart-analyzer-tablet-banner.svg";
+        "https://assets.insight.co.id/images/products/smart-analyzer/smart-analyzer-tablet-banner.svg";
       break;
     default:
-      bannerSrc = "/images/products/smart-analyzer/smart-analyzer-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/products/smart-analyzer/smart-analyzer-banner.svg";
   }
 
   return (
@@ -31,7 +32,7 @@ const casewareSmartAnalyzerPage = () => {
       <Banner
         src={bannerSrc}
         alt="Banner Smart Analyzer"
-        logoSrc="/images/products/caseware-logo.svg"
+        logoSrc="https://assets.insight.co.id/images/products/caseware-logo.svg"
         withRectangle={isDesktop}
       />
 

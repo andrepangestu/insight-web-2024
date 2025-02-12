@@ -17,14 +17,15 @@ const DataAnalyticsPage = () => {
   switch (true) {
     case isMobile:
       bannerSrc =
-        "/images/solutions/data-analytics/data-analytics-mobile-banner.svg";
+        "https://assets.insight.co.id/images/solutions/data-analytics/data-analytics-mobile-banner.svg";
       break;
     case isTablet:
       bannerSrc =
-        "/images/solutions/data-analytics/data-analytics-tablet-banner.svg";
+        "https://assets.insight.co.id/images/solutions/data-analytics/data-analytics-tablet-banner.svg";
       break;
     default:
-      bannerSrc = "/images/solutions/data-analytics/data-analytics-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/solutions/data-analytics/data-analytics-banner.svg";
   }
 
   return (

@@ -16,14 +16,15 @@ const ExternalAuditPage = () => {
   switch (true) {
     case isMobile:
       bannerSrc =
-        "/images/solutions/external-audit/external-audit-mobile-banner.svg";
+        "https://assets.insight.co.id/images/solutions/external-audit/external-audit-mobile-banner.svg";
       break;
     case isTablet:
       bannerSrc =
-        "/images/solutions/external-audit/external-audit-tablet-banner.svg";
+        "https://assets.insight.co.id/images/solutions/external-audit/external-audit-tablet-banner.svg";
       break;
     default:
-      bannerSrc = "/images/solutions/external-audit/external-audit-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/solutions/external-audit/external-audit-banner.svg";
   }
   return (
     <>

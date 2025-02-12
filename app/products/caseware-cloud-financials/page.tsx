@@ -19,15 +19,15 @@ const casewareCloudPage = () => {
   switch (true) {
     case isMobile:
       bannerSrc =
-        "/images/products/caseware-cloud-financials/caseware-cloud-financials-mobile-banner.svg";
+        "https://assets.insight.co.id/images/products/caseware-cloud-financials/caseware-cloud-financials-mobile-banner.svg";
       break;
     case isTablet:
       bannerSrc =
-        "/images/products/caseware-cloud-financials/caseware-cloud-financials-tablet-banner.svg";
+        "https://assets.insight.co.id/images/products/caseware-cloud-financials/caseware-cloud-financials-tablet-banner.svg";
       break;
     default:
       bannerSrc =
-        "/images/products/caseware-cloud-financials/caseware-cloud-financials-banner.svg";
+        "https://assets.insight.co.id/images/products/caseware-cloud-financials/caseware-cloud-financials-banner.svg";
   }
 
   return (
@@ -36,7 +36,7 @@ const casewareCloudPage = () => {
       <Banner
         src={bannerSrc}
         alt="Banner Caseware Cloud Financials"
-        logoSrc="/images/products/caseware-logo.svg"
+        logoSrc="https://assets.insight.co.id/images/products/caseware-logo.svg"
         withRectangle={isDesktop}
       />
 

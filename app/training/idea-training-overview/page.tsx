@@ -18,13 +18,16 @@ const TrainingOverviewPage = () => {
   let bannerSrc;
   switch (true) {
     case isMobile:
-      bannerSrc = "/images/training/training-mobile-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/training/training-mobile-banner.svg";
       break;
     case isTablet:
-      bannerSrc = "/images/training/training-tablet-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/training/training-tablet-banner.svg";
       break;
     default:
-      bannerSrc = "/images/training/training-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/training/training-banner.svg";
   }
 
   const SectionDescription = ({

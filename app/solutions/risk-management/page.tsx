@@ -17,15 +17,15 @@ const RiskManagementPage = () => {
   switch (true) {
     case isMobile:
       bannerSrc =
-        "/images/solutions/risk-management/risk-management-mobile-banner.svg";
+        "https://assets.insight.co.id/images/solutions/risk-management/risk-management-mobile-banner.svg";
       break;
     case isTablet:
       bannerSrc =
-        "/images/solutions/risk-management/risk-management-tablet-banner.svg";
+        "https://assets.insight.co.id/images/solutions/risk-management/risk-management-tablet-banner.svg";
       break;
     default:
       bannerSrc =
-        "/images/solutions/risk-management/risk-management-banner.svg";
+        "https://assets.insight.co.id/images/solutions/risk-management/risk-management-banner.svg";
   }
 
   return (

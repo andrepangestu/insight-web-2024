@@ -2,7 +2,7 @@ export const documentCollaborationData = [
   {
     id: 1,
     imageSrc:
-      "/images/solutions/document-collaboration/document-collaboration-1.svg",
+      "https://assets.insight.co.id/images/solutions/document-collaboration/document-collaboration-1.svg",
     imageAlt: "document-collaboration-1",
     title: "Centralized Document Control",
     content:
@@ -11,7 +11,7 @@ export const documentCollaborationData = [
   {
     id: 2,
     imageSrc:
-      "/images/solutions/document-collaboration/document-collaboration-2.svg",
+      "https://assets.insight.co.id/images/solutions/document-collaboration/document-collaboration-2.svg",
     imageAlt: "document-collaboration-2",
     title: "Real-Time Collaboration",
     content:
@@ -21,7 +21,7 @@ export const documentCollaborationData = [
   {
     id: 3,
     imageSrc:
-      "/images/solutions/document-collaboration/document-collaboration-3.svg",
+      "https://assets.insight.co.id/images/solutions/document-collaboration/document-collaboration-3.svg",
     imageAlt: "document-collaboration-3",
     title: "Secure Sharing and Access",
     content:
@@ -30,7 +30,7 @@ export const documentCollaborationData = [
   {
     id: 4,
     imageSrc:
-      "/images/solutions/document-collaboration/document-collaboration-4.svg",
+      "https://assets.insight.co.id/images/solutions/document-collaboration/document-collaboration-4.svg",
     imageAlt: "document-collaboration-4",
     title: "Improved Compliance and Accountability",
     content:

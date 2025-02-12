@@ -18,15 +18,15 @@ const InternalAuditPage = () => {
   switch (true) {
     case isMobile:
       bannerSrc =
-        "/images/products/ideagen-internal-audit/ideagen-internal-audit-mobile-banner.svg";
+        "https://assets.insight.co.id/images/products/ideagen-internal-audit/ideagen-internal-audit-mobile-banner.svg";
       break;
     case isTablet:
       bannerSrc =
-        "/images/products/ideagen-internal-audit/ideagen-internal-audit-tablet-banner.svg";
+        "https://assets.insight.co.id/images/products/ideagen-internal-audit/ideagen-internal-audit-tablet-banner.svg";
       break;
     default:
       bannerSrc =
-        "/images/products/ideagen-internal-audit/ideagen-internal-audit-banner.svg";
+        "https://assets.insight.co.id/images/products/ideagen-internal-audit/ideagen-internal-audit-banner.svg";
   }
 
   return (
@@ -35,7 +35,7 @@ const InternalAuditPage = () => {
       <Banner
         src={bannerSrc}
         alt="Banner Ideagen Internal Audit"
-        logoSrc="/images/products/ideagen-internal-audit/ideagen-internal-audit-logo.svg"
+        logoSrc="https://assets.insight.co.id/images/products/ideagen-internal-audit/ideagen-internal-audit-logo.svg"
         withRectangle={isDesktop}
       />
 

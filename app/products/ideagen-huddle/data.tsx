@@ -11,7 +11,8 @@ import {
 export const ideagenRiskManagementData = [
   {
     id: 1,
-    imageSrc: "/images/products/ideagen-huddle/ideagen-huddle-1.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/products/ideagen-huddle/ideagen-huddle-1.svg",
     imageAlt: "ideagen-huddle-1",
     title: "Ensure Security and Compliance",
     content:
@@ -19,7 +20,8 @@ export const ideagenRiskManagementData = [
   },
   {
     id: 2,
-    imageSrc: "/images/products/ideagen-huddle/ideagen-huddle-2.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/products/ideagen-huddle/ideagen-huddle-2.svg",
     imageAlt: "ideagen-huddle-2",
     title: "Experience Government-Grade Security",
     content:
@@ -28,7 +30,8 @@ export const ideagenRiskManagementData = [
   },
   {
     id: 3,
-    imageSrc: "/images/products/ideagen-huddle/ideagen-huddle-3.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/products/ideagen-huddle/ideagen-huddle-3.svg",
     imageAlt: "ideagen-huddle-3",
     title: "Achieve Business Efficiency with E-Signature and Collaboration",
     content:

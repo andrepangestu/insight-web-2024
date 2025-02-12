@@ -1,7 +1,8 @@
 export const riskManagementData = [
   {
     id: 1,
-    imageSrc: "/images/solutions/risk-management/risk-management-1.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/solutions/risk-management/risk-management-1.svg",
     imageAlt: "risk-management-1",
     title: "Integrated Risk Process",
     content:
@@ -9,7 +10,8 @@ export const riskManagementData = [
   },
   {
     id: 2,
-    imageSrc: "/images/solutions/risk-management/risk-management-2.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/solutions/risk-management/risk-management-2.svg",
     imageAlt: "risk-management-2",
     title: "Risk Advisory",
     content:

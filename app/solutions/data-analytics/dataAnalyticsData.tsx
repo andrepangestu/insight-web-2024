@@ -1,7 +1,8 @@
 export const dataAnalyticsData = [
   {
     id: 1,
-    imageSrc: "/images/solutions/data-analytics/data-analytics-1.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/solutions/data-analytics/data-analytics-1.svg",
     imageAlt: "data-analytics-1",
     title: "Enhanced Productivity",
     content:
@@ -9,7 +10,8 @@ export const dataAnalyticsData = [
   },
   {
     id: 2,
-    imageSrc: "/images/solutions/data-analytics/data-analytics-2.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/solutions/data-analytics/data-analytics-2.svg",
     imageAlt: "data-analytics-2",
     title: "Comprehensive Risk Management",
     content:
@@ -18,7 +20,8 @@ export const dataAnalyticsData = [
   },
   {
     id: 3,
-    imageSrc: "/images/solutions/data-analytics/data-analytics-3.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/solutions/data-analytics/data-analytics-3.svg",
     imageAlt: "data-analytics-3",
     title: "Cost Efficiency",
     content:
@@ -26,7 +29,8 @@ export const dataAnalyticsData = [
   },
   {
     id: 4,
-    imageSrc: "/images/solutions/data-analytics/data-analytics-4.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/solutions/data-analytics/data-analytics-4.svg",
     imageAlt: "data-analytics-4",
     title: "Improved Collaboration",
     content:
@@ -35,7 +39,8 @@ export const dataAnalyticsData = [
   },
   {
     id: 5,
-    imageSrc: "/images/solutions/data-analytics/data-analytics-5.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/solutions/data-analytics/data-analytics-5.svg",
     imageAlt: "data-analytics-5",
     title: "Data Integrity and Compliance",
     content:

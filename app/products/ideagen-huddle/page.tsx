@@ -16,14 +16,15 @@ const ideagenHuddlePage = () => {
   switch (true) {
     case isMobile:
       bannerSrc =
-        "/images/products/ideagen-huddle/ideagen-huddle-mobile-banner.svg";
+        "https://assets.insight.co.id/images/products/ideagen-huddle/ideagen-huddle-mobile-banner.svg";
       break;
     case isTablet:
       bannerSrc =
-        "/images/products/ideagen-huddle/ideagen-huddle-tablet-banner.svg";
+        "https://assets.insight.co.id/images/products/ideagen-huddle/ideagen-huddle-tablet-banner.svg";
       break;
     default:
-      bannerSrc = "/images/products/ideagen-huddle/ideagen-huddle-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/products/ideagen-huddle/ideagen-huddle-banner.svg";
   }
 
   return (
@@ -32,7 +33,7 @@ const ideagenHuddlePage = () => {
       <Banner
         src={bannerSrc}
         alt="Banner Ideagen Huddle"
-        logoSrc="/images/products/ideagen-huddle/ideagen-huddle-logo.svg"
+        logoSrc="https://assets.insight.co.id/images/products/ideagen-huddle/ideagen-huddle-logo.svg"
         withRectangle={isDesktop}
       />
 

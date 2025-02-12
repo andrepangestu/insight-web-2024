@@ -1,19 +1,43 @@
-import { FormData } from "@/components/InquiryForm/Contact";
+import { FormData } from "@/components/InquiryForm";
+import { Bounce, toast } from "react-toastify";
 
 export function sendEmail(data: FormData) {
   const apiEndpoint = "/api/email";
 
-  console.log(data);
-
-  fetch(apiEndpoint, {
+  return fetch(apiEndpoint, {
     method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
     body: JSON.stringify(data),
   })
     .then((res) => res.json())
     .then((response) => {
-      alert(response.message);
+      toast.success("Thank you! For contact us.", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
+      return response;
     })
     .catch((err) => {
-      alert(err);
+      toast.error("Error ! Please try again.", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
+      throw err;
     });
 }

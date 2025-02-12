@@ -16,13 +16,16 @@ const ItAdvisoryPage = () => {
   let bannerSrc;
   switch (true) {
     case isMobile:
-      bannerSrc = "/images/solutions/it-advisory/it-advisory-mobile-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/solutions/it-advisory/it-advisory-mobile-banner.svg";
       break;
     case isTablet:
-      bannerSrc = "/images/solutions/it-advisory/it-advisory-tablet-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/solutions/it-advisory/it-advisory-tablet-banner.svg";
       break;
     default:
-      bannerSrc = "/images/solutions/it-advisory/it-advisory-banner.svg";
+      bannerSrc =
+        "https://assets.insight.co.id/images/solutions/it-advisory/it-advisory-banner.svg";
   }
 
   return (

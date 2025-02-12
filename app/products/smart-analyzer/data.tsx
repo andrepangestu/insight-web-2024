@@ -1,7 +1,8 @@
 export const casewareSmartAnalyzerData = [
   {
     id: 1,
-    imageSrc: "/images/products/smart-analyzer/smart-analyzer-1.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/products/smart-analyzer/smart-analyzer-1.svg",
     imageAlt: "smart-analyzer-1",
     title: "Track and Complete Your Audit",
     content:
@@ -9,7 +10,8 @@ export const casewareSmartAnalyzerData = [
   },
   {
     id: 2,
-    imageSrc: "/images/products/smart-analyzer/smart-analyzer-2.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/products/smart-analyzer/smart-analyzer-2.svg",
     imageAlt: "smart-analyzer-2",
     title: "Navigate with Select & Run",
     content:
@@ -18,7 +20,8 @@ export const casewareSmartAnalyzerData = [
   },
   {
     id: 3,
-    imageSrc: "/images/products/smart-analyzer/smart-analyzer-3.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/products/smart-analyzer/smart-analyzer-3.svg",
     imageAlt: "smart-analyzer-3",
     title: "Unlock a World of Possibilities with the Marketplace",
     content:
@@ -26,7 +29,8 @@ export const casewareSmartAnalyzerData = [
   },
   {
     id: 4,
-    imageSrc: "/images/products/smart-analyzer/smart-analyzer-4.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/products/smart-analyzer/smart-analyzer-4.svg",
     imageAlt: "smart-analyzer-4",
     title: "Breeze Through Data Prep with Ease",
     content:
@@ -35,7 +39,8 @@ export const casewareSmartAnalyzerData = [
   },
   {
     id: 5,
-    imageSrc: "/images/products/smart-analyzer/smart-analyzer-5.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/products/smart-analyzer/smart-analyzer-5.svg",
     imageAlt: "smart-analyzer-5",
     title: "Seamlessly Tap into the Data You Need",
     content:
@@ -44,7 +49,8 @@ export const casewareSmartAnalyzerData = [
   ,
   {
     id: 6,
-    imageSrc: "/images/products/smart-analyzer/smart-analyzer-6.svg",
+    imageSrc:
+      "https://assets.insight.co.id/images/products/smart-analyzer/smart-analyzer-6.svg",
     imageAlt: "smart-analyzer-6",
     title: "Get Results and Reports—Hassle-Free!",
     content:

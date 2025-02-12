@@ -33,7 +33,7 @@ const Banner: React.FC<BannerProps> = (props) => {
             <div className="absolute right-0 top-0 w-1/3">
               <Image
                 className="relative"
-                src="/images/products/rectangle-banner.svg"
+                src="https://assets.insight.co.id/images/products/rectangle-banner.svg"
                 alt="rectangle"
                 width={0}
                 height={320}

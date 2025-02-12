@@ -14,7 +14,7 @@ export const ideagenInternalAuditData = [
   {
     id: 1,
     imageSrc:
-      "/images/products/ideagen-internal-audit/ideagen-internal-audit-1.svg",
+      "https://assets.insight.co.id/images/products/ideagen-internal-audit/ideagen-internal-audit-1.svg",
     imageAlt: "ideagen-internal-audit-1",
     title: "Simplify Your Internal Audit Process with Ideagen",
     content:
@@ -23,7 +23,7 @@ export const ideagenInternalAuditData = [
   {
     id: 2,
     imageSrc:
-      "/images/products/ideagen-internal-audit/ideagen-internal-audit-2.svg",
+      "https://assets.insight.co.id/images/products/ideagen-internal-audit/ideagen-internal-audit-2.svg",
     imageAlt: "ideagen-internal-audit-2",
     title: "Focus on What’s Most Important",
     content:
@@ -33,7 +33,7 @@ export const ideagenInternalAuditData = [
   {
     id: 3,
     imageSrc:
-      "/images/products/ideagen-internal-audit/ideagen-internal-audit-3.svg",
+      "https://assets.insight.co.id/images/products/ideagen-internal-audit/ideagen-internal-audit-3.svg",
     imageAlt: "ideagen-internal-audit-3",
     title: "Empower Your Role as a Trusted Advisor",
     content:

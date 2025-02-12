@@ -19,15 +19,15 @@ const casewareAuditSolutionPage = () => {
   switch (true) {
     case isMobile:
       bannerSrc =
-        "/images/products/caseware-audit-solution/caseware-audit-solution-mobile-banner.svg";
+        "https://assets.insight.co.id/images/products/caseware-audit-solution/caseware-audit-solution-mobile-banner.svg";
       break;
     case isTablet:
       bannerSrc =
-        "/images/products/caseware-audit-solution/caseware-audit-solution-tablet-banner.svg";
+        "https://assets.insight.co.id/images/products/caseware-audit-solution/caseware-audit-solution-tablet-banner.svg";
       break;
     default:
       bannerSrc =
-        "/images/products/caseware-audit-solution/caseware-audit-solution-banner.svg";
+        "https://assets.insight.co.id/images/products/caseware-audit-solution/caseware-audit-solution-banner.svg";
   }
 
   return (
@@ -37,7 +37,7 @@ const casewareAuditSolutionPage = () => {
       <Banner
         src={bannerSrc}
         alt="Banner Caseware Audit Solution"
-        logoSrc="/images/products/caseware-logo.svg"
+        logoSrc="https://assets.insight.co.id/images/products/caseware-logo.svg"
         withRectangle={isDesktop}
       />
 
