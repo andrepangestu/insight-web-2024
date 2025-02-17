@@ -16,7 +16,7 @@ const ContactUsSection: React.FC<ContactUsSectionProps> = (props) => {
         </span>
 
         <Link
-          href="contact-us"
+          href="/contact-us/inquiry-form"
           className="mt-4 inline-flex items-center justify-center rounded-lg border border-white p-2 md:ml-4"
         >
           <MessageIcon />
