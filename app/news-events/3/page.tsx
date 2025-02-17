@@ -43,24 +43,25 @@ const NewsEventsDetailPage3 = () => {
       <div className="container mb-16">
         <hr className="my-8 w-full border-b border-lightSilver" />
         <span className="mb-4 block text-[26px] font-semibold text-primaryTextBlue">
-          Ideagen acquaires Morgan Kai Group Ltd.
+          New Ideagen Internal Audit.
         </span>
         <div className="mb-4">
           <span className="mr-1 text-sm font-normal text-primaryTextGrey">
-            16 December 2019 | Product News. | by
+            1 December 2024 | Product News. | by
           </span>
           <span className="text-sm font-normal text-primaryRed">
-            Irfan Irawan
+            Insight Consulting
           </span>
         </div>
 
         <span className="mb-5 block font-medium text-primaryText">
-          Ideagen plc, the UK-based, global software firm, today announced the
-          acquisition of Morgan Kai Group Ltd, a leading Audit Management
-          software provider to both public and private sector organisations.
+          Ideagen’s Internal Audit solution has a new edition that gives you the
+          best of both worlds: a clean and modern interface that’s easy to use,
+          with the expert functionality that Ideagen is known for.
         </span>
 
-        <VideoEmbed src="https://www.youtube.com/embed/ThDt3Zfl2JI" />
+        <VideoEmbed src="https://www.youtube.com/embed/Tq99qyeLHLU" />
+        <VideoEmbed src="https://www.youtube.com/embed/uX5E6lNJtUU" />
       </div>
 
       <NavigationFooter

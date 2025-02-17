@@ -1,40 +1,40 @@
 const newsEventsListData = [
   {
     id: 1,
-    title: "Expand Your Audit Analytics Landscape: Introducing IDEA 11",
-    date: "16 December 2019",
-    author: "Irfan Irawan",
+    title: "Caseware Announces Acquisition of Extractly.ai",
+    date: "21 January 2025",
+    author: "Insight Consulting",
     content:
-      "Improving efficiency has always been a priority for the audit function. With newer technological applications, expansion across geographies, and increasing competition, auditors around the world need to adopt a robust audit practice.",
-    slug: "expand-your-audit-analytics-landscape-introducing-idea-11",
+      "CaseWare, a global leader in cloud-enabled audit, financial reporting and data analytics solutions, today announced the acquisition of Extractly.ai, the provider of intelligent document processing solutions that streamline the audit process for accounting and finance teams.",
+    slug: "caseware-announces-acquisition-of-extractly-ai",
   },
   {
     id: 2,
-    title: "Caseware Monitor became Alessa",
-    date: "16 December 2019",
-    author: "Irfan Irawan",
+    title: "IDEA 13 is here!",
+    date: "12 December 2024",
+    author: "Insight Consulting",
     content:
-      "Formerly known as CaseWare Monitor, Alessa is CaseWare’s solution for AML compliance, sanctions screening, fraud detection & prevention, procurement monitoring and continuous controls monitoring.",
-    slug: "caseware-monitor-became-alessa",
+      "With this latest release, take your audit analytics to the next level. IDEA 13 bring you a new and exciting hybrid analytics experience, intuitive interface, built-in Smart Actions, powerful enhancements and much more.",
+    slug: "idea-13-is-here",
   },
   {
     id: 3,
-    title: "Ideagen acquaires Morgan Kai Group Ltd.",
-    date: "16 December 2019",
-    author: "Irfan Irawan",
+    title: "New Ideagen Internal Audit",
+    date: "1 December 2024",
+    author: "Insight Consulting",
     content:
-      "Ideagen plc, the UK-based, global software firm, today announced the acquisition of Morgan Kai Group Ltd, a leading Audit Management software provider to both public and private sector organisations.",
-    slug: "ideagen-acquires-morgan-kai-group-ltd",
+      "Ideagen’s Internal Audit solution has a new edition that gives you the best of both worlds: a clean and modern interface that’s easy to use, with the expert functionality that Ideagen is known for.",
+    slug: "new-ideagen-internal-audit",
   },
   {
     id: 4,
     title:
-      "Experience the IDEA 10.4 Launch and See How 10.4 Will Boost the Performance of Your Audit Team",
-    date: "16 December 2019",
-    author: "Irfan Irawan",
+      "Caseware Introduces AiDA: The AI-Powered Digital Assistant Changing the Face of Accounting and Audit",
+    date: "20 June 2024",
+    author: "Insight Consulting",
     content:
-      "The new release of IDEA is here! Watch our pre-recorded webinar to experience improvements to visualizations, user experience, interoperability, and much more.",
-    slug: "experience-the-idea-10-4-launch-and-see-how-10-4-will-boost-the-performance-of-your-audit-team",
+      "CaseWare International, a global leader in cloud-enabled audit, financial reporting and data analytics solutions, is delighted to announce the pre-launch availability of Caseware AiDA, its Artificial Intelligence digital assistant, for customers in Australia.",
+    slug: "caseware-introduces-aida",
   },
 ];
 

@@ -42,21 +42,37 @@ const NewsEventsDetailPage2 = () => {
       <div className="container mb-16">
         <hr className="my-8 w-full border-b border-lightSilver" />
         <span className="mb-4 block text-[26px] font-semibold text-primaryTextBlue">
-          Caseware Monitor became Alessa
+          IDEA 13 is here!
         </span>
         <div className="mb-4">
           <span className="mr-1 text-sm font-normal text-primaryTextGrey">
-            16 December 2019 | Product News. | by
+            12 December 2024 | Product News. | by
           </span>
           <span className="text-sm font-normal text-primaryRed">
-            Irfan Irawan
+            Insight Consulting
           </span>
         </div>
 
         <span className="mb-4 block font-medium text-primaryText">
-          Formerly known as CaseWare Monitor, Alessa is CaseWare’s solution for
-          AML compliance, sanctions screening, fraud detection & prevention,
-          procurement monitoring and continuous controls monitoring.
+          With this latest release, take your audit analytics to the next level.
+        </span>
+
+        <span className="mb-4 block font-medium text-primaryText">
+          IDEA 13 bring you a new and exciting hybrid analytics experience,
+          intuitive interface, built-in Smart Actions, powerful enhancements and
+          much more.This release includes significant new features like the
+          integration of the AI-powered digital assistant Caseware AiDA, which
+          designed to enhance efficiency and provide dynamic, context-aware
+          responses to profession-specific enquiries.
+        </span>
+
+        <span className="mb-4 block font-medium text-primaryText">
+          A major improvement in terms of user experience is the new Check for
+          Updates feature, which is available in the IDEA ribbon. It provides
+          easy access to IDEA updates and notifies users when updates for IDEA
+          are available. Additionally, the new versions come with sample
+          enhancements for script scheduling, handling of the DPI scaling as
+          well as performance improvements in several areas.
         </span>
       </div>
 
