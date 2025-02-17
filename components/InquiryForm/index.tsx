@@ -1,10 +1,11 @@
 "use client";
 
 import { sendEmail } from "@/utils/send-email";
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { useForm } from "react-hook-form";
 import { industriesData, subjectsData } from "./data";
-import { ToastContainer } from "react-toastify";
+import { Bounce, toast, ToastContainer } from "react-toastify";
+import ReCAPTCHA from "react-google-recaptcha";
 
 export type FormData = {
   companyName: string;
@@ -17,15 +18,55 @@ export type FormData = {
 };
 
 const InquiryForm = () => {
-  const { register, handleSubmit, formState } = useForm<FormData>();
+  const { register, handleSubmit, formState, reset } = useForm<FormData>();
   const [loading, setLoading] = useState(false);
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
+
+  const onCaptchaChange = (token: string | null) => {
+    setCaptchaToken(token);
+  };
+
+  const onCaptchaExpired = () => {
+    setCaptchaToken(null);
+    toast.error("Captcha expired. Please complete the captcha again.", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+    });
+  };
 
   async function onSubmit(data: FormData) {
+    if (!captchaToken) {
+      // Handle error (e.g., show an error message)
+      toast.error("Please complete the captcha.", {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: false,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        transition: Bounce,
+      });
+      return;
+    }
+
     setLoading(true);
     try {
       await sendEmail(data);
       // Handle success (e.g., show a success message)
-      await setLoading(false);
+      reset(); // Reset the form
+      setCaptchaToken(null); // Reset the captcha token
+      recaptchaRef.current?.reset(); // Reset the reCAPTCHA
+      setLoading(false);
     } catch (error) {
       await setLoading(false);
       // Handle error (e.g., show an error message)
@@ -199,7 +240,7 @@ const InquiryForm = () => {
         )}
       </div>
 
-      <div className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-2">
+      {/* <div className="grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-2">
         <input
           type="text"
           name="input-captcha"
@@ -209,7 +250,7 @@ const InquiryForm = () => {
         <div className="flex h-[52px] items-center justify-center bg-seaServant text-white">
           CAPTCHA
         </div>
-      </div>
+      </div> */}
 
       <textarea
         rows={5}
@@ -218,6 +259,15 @@ const InquiryForm = () => {
         outline-none focus:border-primary focus-visible:shadow-none`}
         {...register("message")}
       />
+
+      <div className="mb-6 grid grid-cols-2 gap-4 md:grid-cols-2 lg:grid-cols-2">
+        <ReCAPTCHA
+          ref={recaptchaRef}
+          sitekey="6LdeW9kqAAAAAD95rA-bhI_4J5LwcyFl6RW9Eg_m"
+          onChange={onCaptchaChange}
+          onExpired={onCaptchaExpired}
+        />
+      </div>
 
       <div>
         <button
